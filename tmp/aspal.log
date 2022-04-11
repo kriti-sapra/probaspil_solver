@@ -1,0 +1,159 @@
+04-11 13:30 root         DEBUG    File parsed successfully
+04-11 13:30 root         DEBUG    Starting creation of the top theory
+04-11 13:30 root         DEBUG    Making head for modedec: modeh(surf(+time))
+04-11 13:30 root         DEBUG    Anything in here? surf(A)
+04-11 13:30 root         DEBUG    Const vars: 
+04-11 13:30 root         DEBUG    CONST TYPE: 
+04-11 13:30 root         DEBUG    TYPE SECONDS: time(A)
+04-11 13:30 root         DEBUG    CLAUSE: surf(A).
+04-11 13:30 root         DEBUG    Head ready: surf(A):-
+	time(A).
+ with flattening [(idsuwBC,c,l)]
+04-11 13:30 root         DEBUG    Head processed, now expanding the rules
+04-11 13:30 root         DEBUG    Extending rule: surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    Flattening of the rule
+04-11 13:30 root         DEBUG    (idsuwBC,c,l)
+04-11 13:30 root         DEBUG    >>>Now considering mode modec(sunshine(+time))
+04-11 13:30 root         DEBUG    >>>On the following rules 
+04-11 13:30 root         DEBUG    surf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    Processingsurf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    #Adding consumer modec(sunshine(+time))
+04-11 13:30 root         DEBUG    #Flattening of the rule
+04-11 13:30 root         DEBUG    #(idsuwBC,c,l)
+04-11 13:30 root         DEBUG    #Consumer length 0
+04-11 13:30 root         DEBUG    ##Iteration 1
+04-11 13:30 root         DEBUG    ###Extending surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    COPY RULE : surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    Finding bindings
+04-11 13:30 root         DEBUG    Available variables: [('A', 'time')]
+04-11 13:30 root         DEBUG    Condition to bind: sunshine(B)
+04-11 13:30 root         DEBUG    now('A', 'time')
+04-11 13:30 root         DEBUG    input istimeB
+04-11 13:30 root         DEBUG    ###Got 1 new rules
+04-11 13:30 root         DEBUG    ##Got a total of 1 new rules:
+04-11 13:30 root         DEBUG    surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B).
+
+04-11 13:30 root         DEBUG    >>>Now the new rules are 
+04-11 13:30 root         DEBUG    surf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    surf(A):-  time(A), A=B, time(B), sunshine(B).
+
+04-11 13:30 root         DEBUG    >>>Now considering mode modec(windok(+time))
+04-11 13:30 root         DEBUG    >>>On the following rules 
+04-11 13:30 root         DEBUG    surf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    surf(A):-  time(A), A=B, time(B), sunshine(B).
+
+04-11 13:30 root         DEBUG    Processingsurf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    #Adding consumer modec(windok(+time))
+04-11 13:30 root         DEBUG    #Flattening of the rule
+04-11 13:30 root         DEBUG    #(idsuwBC,c,l)
+04-11 13:30 root         DEBUG    #Consumer length 0
+04-11 13:30 root         DEBUG    ##Iteration 1
+04-11 13:30 root         DEBUG    ###Extending surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    COPY RULE : surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    Finding bindings
+04-11 13:30 root         DEBUG    Available variables: [('A', 'time')]
+04-11 13:30 root         DEBUG    Condition to bind: windok(B)
+04-11 13:30 root         DEBUG    now('A', 'time')
+04-11 13:30 root         DEBUG    input istimeB
+04-11 13:30 root         DEBUG    ###Got 1 new rules
+04-11 13:30 root         DEBUG    ##Got a total of 1 new rules:
+04-11 13:30 root         DEBUG    surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	windok(B).
+
+04-11 13:30 root         DEBUG    Processingsurf(A):-  time(A), A=B, time(B), sunshine(B).
+
+04-11 13:30 root         DEBUG    #Adding consumer modec(windok(+time))
+04-11 13:30 root         DEBUG    #Flattening of the rule
+04-11 13:30 root         DEBUG    #(idsuwBC,c,l)
+04-11 13:30 root         DEBUG    #(idsukC,c,l(1))
+04-11 13:30 root         DEBUG    #Consumer length 1
+04-11 13:30 root         DEBUG    ##Iteration 1
+04-11 13:30 root         DEBUG    ###Extending surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B).
+
+04-11 13:30 root         DEBUG    COPY RULE : surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B).
+
+04-11 13:30 root         DEBUG    Finding bindings
+04-11 13:30 root         DEBUG    Available variables: [('A', 'time')]
+04-11 13:30 root         DEBUG    Condition to bind: windok(C)
+04-11 13:30 root         DEBUG    now('A', 'time')
+04-11 13:30 root         DEBUG    input istimeC
+04-11 13:30 root         DEBUG    ###Got 1 new rules
+04-11 13:30 root         DEBUG    ##Got a total of 1 new rules:
+04-11 13:30 root         DEBUG    surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B),
+	A=C,
+	time(C),
+	windok(C).
+
+04-11 13:30 root         DEBUG    >>>Now the new rules are 
+04-11 13:30 root         DEBUG    surf(A):-  time(A).
+
+04-11 13:30 root         DEBUG    surf(A):-  time(A), A=B, time(B), windok(B).
+
+04-11 13:30 root         DEBUG    surf(A):-  time(A), A=B, time(B), sunshine(B).
+
+04-11 13:30 root         DEBUG    surf(A):-  time(A), A=B, time(B), sunshine(B), A=C, time(C), windok(C).
+
+04-11 13:30 root         DEBUG    Final rule: surf(A):-
+	time(A).
+
+04-11 13:30 root         DEBUG    Final rule: surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	windok(B).
+
+04-11 13:30 root         DEBUG    Final rule: surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B).
+
+04-11 13:30 root         DEBUG    Final rule: surf(A):-
+	time(A),
+	A=B,
+	time(B),
+	sunshine(B),
+	A=C,
+	time(C),
+	windok(C).
+
+04-11 13:30 root         DEBUG    Top theory created
+04-11 13:30 root         DEBUG    Starting processing probabilistic facts
+04-11 13:30 root         DEBUG    Probabilistic Facts Processed
+04-11 13:30 root         DEBUG    Starting processing examples
+04-11 13:30 root         DEBUG    Examples Processed
+04-11 13:30 root         DEBUG    Temporary file created in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_sunshine_example.lp

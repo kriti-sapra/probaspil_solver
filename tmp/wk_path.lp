@@ -1,0 +1,298 @@
+node(a).
+node(b).
+node(c).
+
+path(X,X):-node(X).
+
+
+
+path(A,B):-
+	node(A),
+	node(B),
+	rule(r((idpadvB,c,l)),1).
+path(A,B):-
+	node(A),
+	node(B),
+	A=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idpac2B,c,l(1, 1))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	A=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idpac2B,c,l(1, 2))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	B=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idpac2B,c,l(2, 1))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	B=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idpac2B,c,l(2, 2))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(1, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(1, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(1, 3))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(2, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(2, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(2, 3))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(3, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(3, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	A=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(1)),(idpac2B,c,l(3, 3))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2))),2).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(1, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(1, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	A=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(1, 3))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(2, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(2, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	B=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(2, 3))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	A=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(3, 1))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	B=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(3, 2))),3).
+path(A,B):-
+	node(A),
+	node(B),
+	B=C,
+	node(C),
+	node(D),
+	edge(C,D),
+	D=E,
+	D=F,
+	node(E),
+	node(F),
+	path(E,F),
+	rule(r((idpadvB,c,l),(idedJiC,c,l(2)),(idpac2B,c,l(3, 3))),3).

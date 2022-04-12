@@ -10,16 +10,17 @@ from itertools import chain, combinations
 
 om = HumanOutputWrapper()
 
-DEFAULT_FILE = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/sunshine_example.lp'
+DEFAULT_FILE = 'experiments/path.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
 FILENAME = DEFAULT_FILE
+EPSILON = 0.3
 
 # PARAMETERS
 MAX_PRODUCERS = 10
 MAX_CONSUMERS = 10
-MAX_RULES = 10
+MAX_RULES = 2
 MAX_CONDITIONS = 2
 
 
@@ -62,13 +63,6 @@ def print_task():
     om.toOut("Max conditions: " + str(MAX_CONDITIONS))
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
-
-
-def update_task_stats():
-    stats.checkStatUpdate("max_consumers:" + str(MAX_CONSUMERS), True)
-    stats.checkStatUpdate("max_producers:" + str(MAX_PRODUCERS), True)
-    stats.checkStatUpdate("max_condition:" + str(MAX_CONDITIONS), True)
-    stats.checkStatUpdate("max_rules:" + str(MAX_RULES), True)
 
 
 # PREPROCESSING FILE
@@ -538,9 +532,12 @@ def createTop(modedecs):
 def process_inputs(inputs, delim=''):
     out = {}
     for p in inputs:
-        p = p[:-2]
-        p = p.replace(delim + '(', '')
-        args = p.split(',')
+        # p = p[:-2]
+        # p = p.replace(delim + '(', '')
+        # args = p.split(',')
+        print("P: {}".format(p))
+        args = get_outer_arguments(p)
+        print(args)
         assert len(args) == 2
         if delim == 'pf':
             key = args[0] + '. '
@@ -551,6 +548,7 @@ def process_inputs(inputs, delim=''):
 
 
 def process_file(filename):
+    print("FILE: {}".format(filename))
     [modedecs, prob_facts, examples, background] = parse_file(filename)
     logging.debug('File parsed successfully')
     # Creates mode declarations (with type and label)
@@ -702,7 +700,7 @@ def hyp_len(hypothesis, rule_lengths):
 # Creates a powerset of iterable and calculates their values given a function
 def powerset_with_values(iterable, func):
     s = list(iterable.keys())
-    ps = chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
+    ps = chain.from_iterable(combinations(s, r) for r in range(MAX_RULES + 1))
 
     return {''.join(s): func(s, iterable) for s in ps}
 
@@ -758,25 +756,30 @@ def h_score(h_len, h_loss, a):
 
 
 # Execute Clingo to check solutions
-def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_accuracy, epsilon=0.5):
+def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_accuracy):
     # proc = subprocess.Popen(SOLVER + ' < ' + file, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     solutions = {}
     bestscore = None
     bestsolution = set()
 
+    logging.debug("Starting to make hypotheses.")
     hypotheses = powerset_with_values(rule_weights, hyp_len)
+    logging.debug("Hypotheses made!")
     max_hypothesis_length = max(hypotheses.values())
     alpha = 1 / max_hypothesis_length
 
+    logging.debug("Starting to make total choices.")
     total_choices = powerset_with_values(prob_facts, prob)
+    logging.debug("Total choices made.")
 
     for h in hypotheses:
-        print("H: {}".format(h))
         # Examples you are trying to reach
         prob_examples_h = {e: 0 for e in examples}
+        logging.debug("Hypothesis: {}".format(h))
 
         for tc in total_choices:
+            logging.debug("Hypothesis: {}, TC: {}".format(h, tc))
             # Create a Control object that will unify models against the appropriate
             # predicates. Then load the asp file that encodes the problem domain.
 
@@ -802,7 +805,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_
         score = h_score(h_len=hypotheses[h], h_loss=loss, a=alpha)
 
         # Check if hypothesis is a solution and if you have to update best solution
-        if score < epsilon:
+        if score < EPSILON:
             # Reset current solution to avoid duplicates and contamination
             currentsolution = set()
             # Get individual rule abducibles from the hypothesis
@@ -828,6 +831,8 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_
             elif score == bestscore:
                 # There could be multiple solutions with the same lowest score
                 bestsolution.add(frozenset(currentsolution))
+
+        logging.debug("HYpothesis: {}, Score: {}".format(h, score))
 
     # Return all the solutions, the best solutions and the best score
     return solutions, bestsolution, bestscore

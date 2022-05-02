@@ -9,7 +9,7 @@ import clingo
 from itertools import chain, combinations
 import sys
 
-DEFAULT_FILE = 'experiments/surf_const_example.lp'
+DEFAULT_FILE = 'experiments/smokes.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
@@ -511,14 +511,13 @@ def create_top(modedecs):
         # Get abducible
         abd = rule.getAbd()
         # Gets the constants in the rule
-        tf = typingformat(rule.constantflattening)
-        # abd += tf
+        # Remove type formatting here
+        # tf = typingformat(rule.constantflattening)
         # Add the abducible to the rule
         rule.addCondition(abd)
         # Gets the contrsints of the rule
         constrs = typingformat(rule.constraints)  # TODO: check if this is needed argh
-        abd_tf = abd + tf + '.'
-
+        abd_extended = abd + '.'
 
         if str(rule.head).startswith("exception"):
             subtract = 1  # TODO: now they are normal rules. We can treat exceptions differently
@@ -526,7 +525,7 @@ def create_top(modedecs):
             subtract = 0
         rule_len = int(len(rule.flattening) - subtract)
 
-        abd_weights[abd_tf] = rule_len
+        abd_weights[abd_extended] = rule_len
 
     return finalrules, abd_weights
 
@@ -545,6 +544,60 @@ def process_inputs(inputs, delim=''):
     return out
 
 
+# Function that creates rule abducibles with any constants already included by running a preprocessing clingo step
+def create_abds_with_constants(rules, old_weights, filename, background):
+    logging.debug("Starting to ground rule abducibles with constants")
+
+    # Create temporary file which only includes the background
+    finalfile = ''
+    finalfile += background
+
+    new_weights = {}
+
+    # Traverse rules. If they require constant flattening then add a rule to get constant flattened abducibles into
+    # temp file. If they do not require constant flattening, add them as is to new weights.
+    for r in rules:
+        rule_abd = r.getAbd()
+        if r.constantflattening:
+            temp_rule = rule_abd + typingformat(r.constantflattening) + '. \n'
+            logging.debug("Temp rule formed: {}".format(temp_rule))
+            finalfile += temp_rule
+        else:
+            # The constants do not need to be flattened so you add the abducible to new weights without change
+            rule_abd += '.'
+            new_weights[rule_abd] = old_weights[rule_abd]
+
+    # Create temporary file and write background and grounding rules for abducibles
+    logging.debug("Writing to temporary file for grounding abducibles")
+    tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + filename.split("/")[-1]
+    ensure_dir(tempfile)
+    f = open(tempfile, 'w')
+    f.write(finalfile)
+    f.close()
+    logging.debug('Temporary file for grounding constant abducibles in %s' % tempfile)
+
+    # Run clingo on this temporary file to get all possible groundings of the abducibles
+    logging.debug("Running clingo to find ground abducibles.")
+    ctrl = clingo.Control(["0", "--warn=none"])
+    ctrl.load(tempfile)
+    ctrl.ground([("base", [])])
+
+    # Solve the program and get all models
+    models = get_models(control=ctrl)
+
+    # For each model, get the grounded rule abducibles and add them to the new weights
+    logging.debug("Retrieving ground abdcuible facts from answer set")
+    for m in models:
+        for fact in m:
+            fact = str(fact)
+            if 'rule' in fact:
+                new_rule_abd = fact + '.'
+                args = get_outer_arguments(fact)
+                new_weights[new_rule_abd] = int(args[1])
+
+    return new_weights
+
+
 def process_file(filename):
     logging.debug("Filename: {}".format(filename))
     [modedecs, prob_facts, examples, background] = parse_file(filename)
@@ -555,8 +608,8 @@ def process_file(filename):
     top, weights = create_top(fullmodedecs)
     logging.debug('Top theory created')
 
-    # for r in top:
-    #     print("RULE: {}".format(r))
+    # TODO: Edit weights to contain abducibles where all rules with constants are flattened
+    const_flattened_weights = create_abds_with_constants(rules=top, old_weights=weights, filename=filename, background=background)
 
     logging.debug('Starting processing probabilistic facts')
     pfs = process_inputs(prob_facts, 'pf')
@@ -580,7 +633,7 @@ def process_file(filename):
     f.close()
     logging.debug('Temporary file created in %s' % tempfile)
 
-    return tempfile, weights, fullmodedecs, pfs, exs
+    return tempfile, const_flattened_weights, fullmodedecs, pfs, exs
 
 
 # Post Processing
@@ -633,14 +686,12 @@ def transform_rule(r, modedecs):
                                     [range(1, len(clistins) + 1), range(1, len(clistouts) + 1),
                                      range(1, len(constants) + 1)])
     vatom = headschema
-    print("vatom {}".format(vatom))
     # Add any input variables to the output list
     outputlist.extend(vatom.getTypeVariables('i'))
     # Initialise a new clause
     outclause = Clause(vatom, [])
     # Add the head argument to the rule
     outclause.addFlattening(headarg)
-    print("outclasuse: {}".format(outclause))
     # Add all input variables to the head atom as potential output variables in the clause
     outclause.outvars.extend(clistins)
     # Extend the types of the potential output variables in the clause to include types of input variables in head
@@ -710,7 +761,7 @@ def get_powerset_for_hypotheses(iterable):
 
 def get_total_choices_with_probs(iterable):
     s = list(iterable.keys())
-    ps = chain.from_iterable(combinations(s, r) for r in range(len(s)+1))
+    ps = chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
     return {''.join(s): prob(s, iterable) for s in ps}
 
 
@@ -760,6 +811,7 @@ def l_accuracy(expected, actual):
         # TODO: Normalise? Maybe use TP + TN / |E|
     return 1 - ((true_positive + true_negative) / (true_positive + true_negative + false_positive + false_negative))
 
+
 def probfoil_acc(expected, actual):
     true_positive = 0
     true_negative = 0
@@ -783,7 +835,7 @@ def probfoil_acc(expected, actual):
 
 
 def alt_h_score(h_len, h_loss, a):
-    return (h_len * a) + h_loss
+    return ((h_len * a) * 0.2) + (h_loss * 0.8)
 
 
 # def alt_h_score(h_len, h_loss, a):

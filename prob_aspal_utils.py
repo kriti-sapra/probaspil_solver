@@ -46,6 +46,6 @@ def print_solutions(solutions, best_solution, best_score, time):
     for isol in best_solution:
         print_solution(isol, best_score)
 
-    print(f"Found Solution in {time:0.4f} seconds")
+    print('Found Solution in {:.4f} seconds'.format(time))
 
 

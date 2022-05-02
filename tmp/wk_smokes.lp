@@ -1,0 +1,130 @@
+
+person(ann).
+person(bob).
+person(carl).
+
+
+
+smoke(A):-
+	person(A),
+	rule(r((idsmGv,c,l)),1).
+smoke(A):-
+	person(A),
+	A=D,
+	person(D),
+	stress(D),
+	rule(r((idsmGv,c,l),(idstdBC,c,l(1))),2).
+smoke(A):-
+	person(A),
+	A=D,
+	person(D),
+	smoke(D),
+	rule(r((idsmGv,c,l),(idsmVKC,c,l(1))),2).
+smoke(A):-
+	person(A),
+	A=D,
+	person(D),
+	smoke(D),
+	A=E,
+	person(E),
+	stress(E),
+	rule(r((idsmGv,c,l),(idsmVKC,c,l(1)),(idstdBC,c,l(1))),3).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1))),2).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	A=D,
+	person(D),
+	stress(D),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idstdBC,c,l(1))),3).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	B=D,
+	person(D),
+	stress(D),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idstdBC,c,l(2))),3).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	A=D,
+	person(D),
+	smoke(D),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(1))),3).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	A=D,
+	person(D),
+	smoke(D),
+	A=E,
+	person(E),
+	stress(E),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(1)),(idstdBC,c,l(1))),4).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	A=D,
+	person(D),
+	smoke(D),
+	B=E,
+	person(E),
+	stress(E),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(1)),(idstdBC,c,l(2))),4).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	B=D,
+	person(D),
+	smoke(D),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(2))),3).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	B=D,
+	person(D),
+	smoke(D),
+	A=E,
+	person(E),
+	stress(E),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(2)),(idstdBC,c,l(1))),4).
+smoke(A):-
+	person(A),
+	A=C,
+	person(B),
+	person(C),
+	influences(B,C),
+	B=D,
+	person(D),
+	smoke(D),
+	B=E,
+	person(E),
+	stress(E),
+	rule(r((idsmGv,c,l),(idincIC,c,l(1)),(idsmVKC,c,l(2)),(idstdBC,c,l(2))),4).

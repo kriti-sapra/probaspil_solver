@@ -1,6 +1,8 @@
 node(a).
 node(b).
 node(c).
+node(d).
+node(e).
 
 path(X,X):-node(X).
 
@@ -9,7 +11,7 @@ path(X,X):-node(X).
 path(A,B):-
 	node(A),
 	node(B),
-	rule(r((idpaPFB,c,l)),1).
+	rule(r((idpaYQB,c,l)),1).
 path(A,B):-
 	node(A),
 	node(B),
@@ -18,7 +20,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idpadC,c,l(1, 1))),2).
+	rule(r((idpaYQB,c,l),(idpaGRB,c,l(1, 1))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -27,7 +29,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idpadC,c,l(1, 2))),2).
+	rule(r((idpaYQB,c,l),(idpaGRB,c,l(1, 2))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -36,7 +38,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idpadC,c,l(2, 1))),2).
+	rule(r((idpaYQB,c,l),(idpaGRB,c,l(2, 1))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -45,7 +47,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idpadC,c,l(2, 2))),2).
+	rule(r((idpaYQB,c,l),(idpaGRB,c,l(2, 2))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -53,7 +55,7 @@ path(A,B):-
 	node(C),
 	node(D),
 	edge(C,D),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1))),2).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -66,7 +68,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(1, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(1, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -79,7 +81,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(1, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(1, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -92,7 +94,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(1, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(1, 3))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -105,7 +107,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(2, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(2, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -118,7 +120,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(2, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(2, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -131,7 +133,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(2, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(2, 3))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -144,7 +146,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(3, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(3, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -157,7 +159,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(3, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(3, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -170,7 +172,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(1)),(idpadC,c,l(3, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(1)),(idpaGRB,c,l(3, 3))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -178,7 +180,7 @@ path(A,B):-
 	node(C),
 	node(D),
 	edge(C,D),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2))),2).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2))),2).
 path(A,B):-
 	node(A),
 	node(B),
@@ -191,7 +193,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(1, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(1, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -204,7 +206,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(1, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(1, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -217,7 +219,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(1, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(1, 3))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -230,7 +232,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(2, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(2, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -243,7 +245,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(2, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(2, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -256,7 +258,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(2, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(2, 3))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -269,7 +271,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(3, 1))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(3, 1))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -282,7 +284,7 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(3, 2))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(3, 2))),3).
 path(A,B):-
 	node(A),
 	node(B),
@@ -295,4 +297,4 @@ path(A,B):-
 	node(E),
 	node(F),
 	path(E,F),
-	rule(r((idpaPFB,c,l),(idedh5B,c,l(2)),(idpadC,c,l(3, 3))),3).
+	rule(r((idpaYQB,c,l),(idedCGB,c,l(2)),(idpaGRB,c,l(3, 3))),3).

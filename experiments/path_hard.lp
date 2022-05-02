@@ -16,4 +16,6 @@ pf(edge(a,c), 0.3).
 pf(edge(c,d), 0.4).
 pf(edge(d,e), 0.4).
 
-example(path(a,e), 0.22888).
+example(path(a,e), 0.1286).
+example(path(c,e), 0.1600).
+example(path(a,c), 0.8040).

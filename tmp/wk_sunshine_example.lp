@@ -1,3 +1,4 @@
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 time(0..1).
 windok(0).

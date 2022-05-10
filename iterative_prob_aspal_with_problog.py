@@ -8,19 +8,25 @@ from clist import CList
 import clingo
 from itertools import chain, combinations
 import sys
+from problog.program import PrologString
+from problog import get_evaluatable
 
-DEFAULT_FILE = 'experiments/surf_const_example.lp'
+sys.stderr = open('/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/problog.log', 'w')
+
+DEFAULT_FILE = 'experiments/smokes.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
 FILENAME = DEFAULT_FILE
-EPSILON = 2
+EPSILON = 1
 
 # PARAMETERS
 MAX_PRODUCERS = 10
 MAX_CONSUMERS = 10
-MAX_RULES = 2
-MAX_CONDITIONS = 3
+MAX_RULES = 5
+MAX_CONDITIONS = 5
+WINDOW = 10
+MAX_HYP_LEN = 10
 
 om = HumanOutputWrapper()
 
@@ -64,6 +70,9 @@ def print_task():
     om.toOut("Max conditions: " + str(MAX_CONDITIONS))
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
+    om.toOut("Epsilon: " + str(EPSILON))
+    om.toOut("Window: " + str(WINDOW))
+    om.toOut("Max Hypothesis Length: " + str(MAX_HYP_LEN))
 
 
 # PREPROCESSING FILE
@@ -101,7 +110,7 @@ def getConstantComparison(flatatom1, flatatom2, consumer):
     return False
 
 
-# Gets constants in list separated by :
+# Creates a rule body with all the constant types
 def typingformat(cnstlist):
     if cnstlist == []:
         return ''
@@ -142,7 +151,7 @@ def makeHead(modedec, variabiliser):
     inputtypeconds = CList(head.getTypeConditionsForVariableType('i'))
     # Gets all typed conditions for the head
     typeconds = CList(head.getTypeConditions(), 'empty')
-    logging.debug("TYPE Conditions: {}".format(typeconds))
+    logging.debug("TYPE SECONDS: {}".format(typeconds))
 
     # Builds the clause
     # Creates a clause with an empty body and just the variablised head
@@ -457,7 +466,7 @@ def parse_file(filename):
     return [modedecs, prob_facts, examples, background]
 
 
-def create_top(modedecs):
+def createTop(modedecs):
     rules = []
     finalrules = []
     modedecs.sort()
@@ -504,31 +513,15 @@ def create_top(modedecs):
     for r in finalrules:
         logging.debug("Final rule: {}".format(r))
 
-    abd_weights = {}
 
     # For each rule in the final rules, get it's abducible and weight
     for rule in finalrules:
         # Get abducible
         abd = rule.getAbd()
-        # Gets the constants in the rule
-        tf = typingformat(rule.constantflattening)
-        # abd += tf
         # Add the abducible to the rule
         rule.addCondition(abd)
-        # Gets the contrsints of the rule
-        constrs = typingformat(rule.constraints)  # TODO: check if this is needed argh
-        abd_tf = abd + tf + '.'
 
-
-        if str(rule.head).startswith("exception"):
-            subtract = 1  # TODO: now they are normal rules. We can treat exceptions differently
-        else:
-            subtract = 0
-        rule_len = int(len(rule.flattening) - subtract)
-
-        abd_weights[abd_tf] = rule_len
-
-    return finalrules, abd_weights
+    return finalrules
 
 
 # Process probabilistic facts and examples
@@ -544,6 +537,63 @@ def process_inputs(inputs, delim=''):
         out[key] = float(args[1])
     return out
 
+# Function that creates rule abducibles with any constants already included by running a preprocessing clingo step
+def create_abds_with_constants(rules, filename, background):
+    logging.debug("Starting to ground rule abducibles with constants")
+
+    # Create temporary file which only includes the background
+    finalfile = ''
+    finalfile += background
+
+    new_weights = {}
+    constant_flattening_required = False
+
+    # Traverse rules. If they require constant flattening then add a rule to get constant flattened abducibles into
+    # temp file. If they do not require constant flattening, add them as is to new weights.
+    for r in rules:
+        rule_abd = r.getAbd()
+        if r.constantflattening:
+            constant_flattening_required = True
+            temp_rule = rule_abd + typingformat(r.constantflattening) + '. \n'
+            logging.debug("Temp rule formed: {}".format(temp_rule))
+            finalfile += temp_rule
+        else:
+            # The constants do not need to be flattened so you add the abducible to new weights without change
+            args = get_outer_arguments(rule_abd)
+            rule_abd += '.'
+            new_weights[rule_abd] = int(args[1])
+
+    if constant_flattening_required:
+        # Create temporary file and write background and grounding rules for abducibles
+        logging.debug("Writing to temporary file for grounding abducibles")
+        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + filename.split("/")[-1]
+        ensure_dir(tempfile)
+        f = open(tempfile, 'w')
+        f.write(finalfile)
+        f.close()
+        logging.debug('Temporary file for grounding constant abducibles in %s' % tempfile)
+
+        # Run clingo on this temporary file to get all possible groundings of the abducibles
+        logging.debug("Running clingo to find ground abducibles.")
+        ctrl = clingo.Control(["0", "--warn=none"])
+        ctrl.load(tempfile)
+        ctrl.ground([("base", [])])
+
+        # Solve the program and get all models
+        models = get_models(control=ctrl)
+
+        # For each model, get the grounded rule abducibles and add them to the new weights
+        logging.debug("Retrieving ground abdcuible facts from answer set")
+        for m in models:
+            for fact in m:
+                fact = str(fact)
+                if 'rule' in fact:
+                    new_rule_abd = fact + '.'
+                    args = get_outer_arguments(fact)
+                    new_weights[new_rule_abd] = int(args[1])
+
+    return new_weights
+
 
 def process_file(filename):
     logging.debug("Filename: {}".format(filename))
@@ -552,11 +602,10 @@ def process_file(filename):
     # Creates mode declarations (with type and label)
     fullmodedecs = createModeDecs(modedecs)
     logging.debug('Starting creation of the top theory')
-    top, weights = create_top(fullmodedecs)
+    top = createTop(fullmodedecs)
     logging.debug('Top theory created')
 
-    # for r in top:
-    #     print("RULE: {}".format(r))
+    const_flattened_weights = create_abds_with_constants(rules=top, filename=filename, background=background)
 
     logging.debug('Starting processing probabilistic facts')
     pfs = process_inputs(prob_facts, 'pf')
@@ -573,14 +622,24 @@ def process_file(filename):
     for r in top:
         finalfile += str(r)
 
-    tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_" + filename.split("/")[-1]
-    ensure_dir(tempfile)
-    f = open(tempfile, 'w')
-    f.write(finalfile)
-    f.close()
-    logging.debug('Temporary file created in %s' % tempfile)
+    for pf in pfs:
+        pf_str = str(pfs[pf]) + '::' + pf + '\n'
+        finalfile += pf_str
 
-    return tempfile, weights, fullmodedecs, pfs, exs
+    for ex in exs:
+        ex_str = 'query(' + ex + '). \n'
+        finalfile += ex_str
+
+    logging.debug("File contents processed")
+
+    # tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_" + filename.split("/")[-1]
+    # ensure_dir(tempfile)
+    # f = open(tempfile, 'w')
+    # f.write(finalfile)
+    # f.close()
+    # logging.debug('Temporary file created in %s' % tempfile)
+
+    return finalfile, const_flattened_weights, fullmodedecs, pfs, exs
 
 
 # Post Processing
@@ -617,7 +676,6 @@ def transform_rule(r, modedecs):
 
     # Get the id of the head atom
     i = headarg.arguments[0]
-
     # Get the predicate of the head atom
     modename = i.predicate
     # Get any constants in the head
@@ -633,14 +691,12 @@ def transform_rule(r, modedecs):
                                     [range(1, len(clistins) + 1), range(1, len(clistouts) + 1),
                                      range(1, len(constants) + 1)])
     vatom = headschema
-    print("vatom {}".format(vatom))
     # Add any input variables to the output list
     outputlist.extend(vatom.getTypeVariables('i'))
     # Initialise a new clause
     outclause = Clause(vatom, [])
     # Add the head argument to the rule
     outclause.addFlattening(headarg)
-    print("outclasuse: {}".format(outclause))
     # Add all input variables to the head atom as potential output variables in the clause
     outclause.outvars.extend(clistins)
     # Extend the types of the potential output variables in the clause to include types of input variables in head
@@ -710,7 +766,7 @@ def get_powerset_for_hypotheses(iterable):
 
 def get_total_choices_with_probs(iterable):
     s = list(iterable.keys())
-    ps = chain.from_iterable(combinations(s, r) for r in range(len(s)+1))
+    ps = chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
     return {''.join(s): prob(s, iterable) for s in ps}
 
 
@@ -739,7 +795,7 @@ def l_mse(expected, actual):
 
 
 # Calculate loss of hypothesis of 1 - acc
-def l_accuracy(expected, actual):
+def accuracy(expected, actual):
     true_positive = 0
     true_negative = 0
     false_positive = 0
@@ -758,28 +814,7 @@ def l_accuracy(expected, actual):
         false_positive += fp
         false_negative += fn
         # TODO: Normalise? Maybe use TP + TN / |E|
-    return 1 - ((true_positive + true_negative) / (true_positive + true_negative + false_positive + false_negative))
-
-def probfoil_acc(expected, actual):
-    true_positive = 0
-    true_negative = 0
-    false_positive = 0
-    false_negative = 0
-    for e in expected:
-        pos = expected[e]
-        posh = actual[e]
-        neg = 1 - pos
-        negh = 1 - posh
-        tp = min(pos, posh)
-        tn = min(neg, negh)
-        fp = max(0, neg - tn)
-        fn = max(0, pos - tp)
-        true_positive += tp
-        true_negative += tn
-        false_positive += fp
-        false_negative += fn
-        # TODO: Normalise? Maybe use TP + TN / |E|
-    return 1 - ((true_positive + true_negative) / len(expected))
+    return (true_positive + true_negative) / len(expected)
 
 
 def alt_h_score(h_len, h_loss, a):
@@ -791,56 +826,70 @@ def alt_h_score(h_len, h_loss, a):
 
 
 # Execute Clingo to check solutions
-def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=probfoil_acc):
+def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy):
     # proc = subprocess.Popen(SOLVER + ' < ' + file, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     solutions = {}
-    bestscore = None
     bestsolution = set()
+    bestsolutionlen = None
+    # Set best coverage to be negative to start with
+    best_coverage = -1
 
     logging.debug("Starting to make hypotheses.")
     hypotheses = get_powerset_for_hypotheses(rule_weights)
+    # Sort hypotheses by length
+    sorted_h = sorted(hypotheses.items(), key=lambda x: x[1])
     logging.debug("Hypotheses made!")
-    max_hypothesis_length = max(hypotheses.values())
-    alpha = 1 / max_hypothesis_length
+    max_hypothesis_length = sorted_h[len(sorted_h) - 1]
+    alpha = 1
 
     logging.debug("Starting to make total choices.")
-    total_choices = get_total_choices_with_probs(prob_facts)
     logging.debug("Total choices made.")
 
-    for h in hypotheses:
+    total_time_runs = 0
+
+    # Traverse hypotheses with shortest first
+    for (h, n) in sorted_h:
+        logging.debug("H: {}, LENGTH: {}".format(h, n))
         # Examples you are trying to reach
-        prob_examples_h = {e: 0 for e in examples}
         logging.debug("Hypothesis: {}".format(h))
 
-        for tc in total_choices:
-            logging.debug("Hypothesis: {}, TC: {}".format(h, tc))
-            # Create a Control object that will unify models against the appropriate
-            # predicates. Then load the asp file that encodes the problem domain.
+        independent_abds = h.split('.')
+        print("ABS: {}".format(independent_abds))
 
-            ctrl = clingo.Control(["0", "--warn=none"])
-            ctrl.load(filename)
+        model = ''
 
-            # Add facts as required and ground the program
-            instance = h + tc
-            ctrl.add("base", [], instance)
-            ctrl.ground([("base", [])])
+        # If the hypothesis is empty, you still need to provide a dummy rule to ground the rule/2 predicate correctly
+        if len(independent_abds) == 1:
+            model += "rule(dummy, 0).\n "
 
-            # Solve the program and get all models
-            models = get_models(control=ctrl)
+        # Write each rule abducible from h on a separate line
+        for abd in independent_abds:
+            if abd.strip() != '':
 
-            # Calculate probability for each example given the hypothesis by adding the probability of the current
-            # total choice
-            check_models_for_examples(actual=prob_examples_h, models=models,
-                                      tc_probability=total_choices[tc])
+                abd_str = '\n' + abd + '. \n'
+                model += abd_str
+
+
+        # Open the base file and append it to the model
+        model += file_contents
+        # print("Model: {}".format(model))
+        start = time.perf_counter()
+        result = get_evaluatable().create_from(PrologString(model)).evaluate()
+        print("res: {}".format(result))
+        end = time.perf_counter()
+
+        # print("RUN TIME TAKEN: {:0.3f}".format(end - start))
+        total_time_runs += (end - start)
+
+        prob_examples_h = {str(r): result[r] for r in result}
 
         # Calculate loss and score of the hypothesis
-        loss = loss_func(expected=examples, actual=prob_examples_h)
+        coverage = loss_func(expected=examples, actual=prob_examples_h)
+        # print("Coverage: {}".format(coverage))
 
-        score = alt_h_score(h_len=hypotheses[h], h_loss=loss, a=alpha)
-
-        # Check if hypothesis is a solution and if you have to update best solution
-        if score < EPSILON:
+        # If the coverage of the same length hypothesis is better then update best solutions accordingly
+        if best_coverage < coverage:
             # Reset current solution to avoid duplicates and contamination
             currentsolution = set()
             # Get individual rule abducibles from the hypothesis
@@ -854,33 +903,34 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
                     line_rep = currentclause.toLineStr()
                     # Add the line representation of the rule to the current solution
                     currentsolution.add(line_rep)  # TODO: Make this make rules instead of abducibles
+            # print("HYpothesis: {}, Score: {:0.4f}, LEN: {}".format(str(currentsolution), coverage, hypotheses[h]))
 
-            # Change the set to a frozen set and add it to a dictionary with it's score
-            solutions[frozenset(currentsolution)] = score
-
-            # Check if the score of this hypothesis is better than the current best score
-            if bestscore is None or score < bestscore:
-                bestscore = score
+            if bestsolutionlen == n and best_coverage == coverage:
+                # If the coverage is the same as best coverage and the same length then you add the hypothesis to best solutions
+                bestsolution.add(frozenset(currentsolution))
+            elif best_coverage < coverage:
+                # If the coverage is more than currenty best coverage, then the best solution set has to be cleared
+                best_coverage = coverage
+                bestsolutionlen = n
                 bestsolution.clear()
                 bestsolution.add(frozenset(currentsolution))
-            elif score == bestscore:
-                # There could be multiple solutions with the same lowest score
-                bestsolution.add(frozenset(currentsolution))
 
-        logging.debug("HYpothesis: {}, Score: {}".format(h, score))
-
+        elif n in range(bestsolutionlen, bestsolutionlen+WINDOW) and n <= MAX_HYP_LEN:
+            # print("ELIF: {}".format(n))
+            continue
+        else:
+            break
     # Return all the solutions, the best solutions and the best score
-    return solutions, bestsolution, bestscore
+    return solutions, bestsolution, best_coverage
 
 
 def find_solutions(file):
     om.toOut('Finding Solutions', size=2)
 
-    filename, weights, modedecs, pfs, exs = process_file(file)
-    om.toOut('Successfully processed {}. Now starting the solver'.format(filename))
+    file_contents, weights, modedecs, pfs, exs = process_file(file)
+    om.toOut('Successfully processed {}. Now starting the solver')
     om.toOut('Invoking {}'.format(SOLVER))
-    solutionshere, bestsolutionhere, bestscorehere = execute(filename=filename, rule_weights=weights, modedecs=modedecs,
-                                                             prob_facts=pfs, examples=exs)
+    solutionshere, bestsolutionhere, bestscorehere = execute(file_contents=file_contents, rule_weights=weights, modedecs=modedecs, examples=exs)
     return solutionshere, bestsolutionhere, bestscorehere
 
 

@@ -8,6 +8,6 @@ temp(cold).
 
 modeh(1, surf(+var1, #temp)).
 modeb(1, sunshine(+var1, #temp), [(max, 1)]).
-modeb(1, windok(+var1)).
+modeb(1, windok(+var1),  [(max, 1)]).
 
 example(surf(d1, mild), 0.42).

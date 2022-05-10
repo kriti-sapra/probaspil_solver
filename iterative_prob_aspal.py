@@ -14,13 +14,15 @@ LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/as
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
 FILENAME = DEFAULT_FILE
-EPSILON = 0.3
+EPSILON = 1
 
 # PARAMETERS
 MAX_PRODUCERS = 10
 MAX_CONSUMERS = 10
-MAX_RULES = 2
-MAX_CONDITIONS = 3
+MAX_RULES = 5
+MAX_CONDITIONS = 5
+WINDOW = 10
+MAX_HYP_LEN = 10
 
 om = HumanOutputWrapper()
 
@@ -64,6 +66,9 @@ def print_task():
     om.toOut("Max conditions: " + str(MAX_CONDITIONS))
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
+    om.toOut("Epsilon: " + str(EPSILON))
+    om.toOut("Window: " + str(WINDOW))
+    om.toOut("Max Hypothesis Length: " + str(MAX_HYP_LEN))
 
 
 # PREPROCESSING FILE
@@ -101,15 +106,15 @@ def getConstantComparison(flatatom1, flatatom2, consumer):
     return False
 
 
-# Gets constants in list separated by :
+# Creates a rule body with all the constant types
 def typingformat(cnstlist):
     if cnstlist == []:
         return ''
-    out = ":"
+    out = " :-"
     for c in cnstlist:
         # Adds constants in rule separated by :
-        out += c + ":"
-    return out[0:-1]
+        out += c + ", "
+    return out[0:-2]
 
 
 # Make head of rules:
@@ -504,7 +509,6 @@ def createTop(modedecs):
     for r in finalrules:
         logging.debug("Final rule: {}".format(r))
 
-    abd_weights = {}
 
     # For each rule in the final rules, get it's abducible and weight
     for rule in finalrules:
@@ -512,21 +516,8 @@ def createTop(modedecs):
         abd = rule.getAbd()
         # Add the abducible to the rule
         rule.addCondition(abd)
-        # Gets the constants in the rule
-        tf = typingformat(rule.constantflattening)
-        # Gets the contrsints of the rule
-        constrs = typingformat(rule.constraints)  # TODO: check if this is needed argh
-        abd_tf = abd + tf + '. '
 
-        if str(rule.head).startswith("exception"):
-            subtract = 1  # TODO: now they are normal rules. We can treat exceptions differently
-        else:
-            subtract = 0
-        rule_len = int(len(rule.flattening) - subtract)
-
-        abd_weights[abd_tf] = rule_len
-
-    return finalrules, abd_weights
+    return finalrules
 
 
 # Process probabilistic facts and examples
@@ -542,6 +533,63 @@ def process_inputs(inputs, delim=''):
         out[key] = float(args[1])
     return out
 
+# Function that creates rule abducibles with any constants already included by running a preprocessing clingo step
+def create_abds_with_constants(rules, filename, background):
+    logging.debug("Starting to ground rule abducibles with constants")
+
+    # Create temporary file which only includes the background
+    finalfile = ''
+    finalfile += background
+
+    new_weights = {}
+    constant_flattening_required = False
+
+    # Traverse rules. If they require constant flattening then add a rule to get constant flattened abducibles into
+    # temp file. If they do not require constant flattening, add them as is to new weights.
+    for r in rules:
+        rule_abd = r.getAbd()
+        if r.constantflattening:
+            constant_flattening_required = True
+            temp_rule = rule_abd + typingformat(r.constantflattening) + '. \n'
+            logging.debug("Temp rule formed: {}".format(temp_rule))
+            finalfile += temp_rule
+        else:
+            # The constants do not need to be flattened so you add the abducible to new weights without change
+            args = get_outer_arguments(rule_abd)
+            rule_abd += '.'
+            new_weights[rule_abd] = int(args[1])
+
+    if constant_flattening_required:
+        # Create temporary file and write background and grounding rules for abducibles
+        logging.debug("Writing to temporary file for grounding abducibles")
+        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + filename.split("/")[-1]
+        ensure_dir(tempfile)
+        f = open(tempfile, 'w')
+        f.write(finalfile)
+        f.close()
+        logging.debug('Temporary file for grounding constant abducibles in %s' % tempfile)
+
+        # Run clingo on this temporary file to get all possible groundings of the abducibles
+        logging.debug("Running clingo to find ground abducibles.")
+        ctrl = clingo.Control(["0", "--warn=none"])
+        ctrl.load(tempfile)
+        ctrl.ground([("base", [])])
+
+        # Solve the program and get all models
+        models = get_models(control=ctrl)
+
+        # For each model, get the grounded rule abducibles and add them to the new weights
+        logging.debug("Retrieving ground abdcuible facts from answer set")
+        for m in models:
+            for fact in m:
+                fact = str(fact)
+                if 'rule' in fact:
+                    new_rule_abd = fact + '.'
+                    args = get_outer_arguments(fact)
+                    new_weights[new_rule_abd] = int(args[1])
+
+    return new_weights
+
 
 def process_file(filename):
     logging.debug("Filename: {}".format(filename))
@@ -550,11 +598,10 @@ def process_file(filename):
     # Creates mode declarations (with type and label)
     fullmodedecs = createModeDecs(modedecs)
     logging.debug('Starting creation of the top theory')
-    top, weights = createTop(fullmodedecs)
+    top = createTop(fullmodedecs)
     logging.debug('Top theory created')
 
-    # for r in top:
-    #     print("RULE: {}".format(r))
+    const_flattened_weights = create_abds_with_constants(rules=top, filename=filename, background=background)
 
     logging.debug('Starting processing probabilistic facts')
     pfs = process_inputs(prob_facts, 'pf')
@@ -578,7 +625,7 @@ def process_file(filename):
     f.close()
     logging.debug('Temporary file created in %s' % tempfile)
 
-    return tempfile, weights, fullmodedecs, pfs, exs
+    return tempfile, const_flattened_weights, fullmodedecs, pfs, exs
 
 
 # Post Processing
@@ -756,12 +803,12 @@ def accuracy(expected, actual):
     return (true_positive + true_negative) / len(expected)
 
 
-def h_score(h_len, h_loss, a):
-    return ((h_len * a) + h_loss) / 2
-
-
 def alt_h_score(h_len, h_loss, a):
-    return ((h_len * a) * 0.05) + (h_loss * 0.95)
+    return (h_len * a) + h_loss
+
+
+# def alt_h_score(h_len, h_loss, a):
+#     return ((h_len * a) * 0.2) + (h_loss * 0.8)
 
 
 # Execute Clingo to check solutions
@@ -777,7 +824,6 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
     logging.debug("Starting to make hypotheses.")
     hypotheses = get_powerset_for_hypotheses(rule_weights)
     # Sort hypotheses by length
-    del hypotheses['']
     sorted_h = sorted(hypotheses.items(), key=lambda x: x[1])
     logging.debug("Hypotheses made!")
     max_hypothesis_length = sorted_h[len(sorted_h) - 1]
@@ -833,7 +879,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
                     line_rep = currentclause.toLineStr()
                     # Add the line representation of the rule to the current solution
                     currentsolution.add(line_rep)  # TODO: Make this make rules instead of abducibles
-            print("HYpothesis: {}, Score: {:0.4f}, LEN: {}".format(str(currentsolution), coverage, hypotheses[h]))
+            # print("HYpothesis: {}, Score: {:0.4f}, LEN: {}".format(str(currentsolution), coverage, hypotheses[h]))
 
             if bestsolutionlen == n and best_coverage == coverage:
                 # If the coverage is the same as best coverage and the same length then you add the hypothesis to best solutions
@@ -845,10 +891,11 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
                 bestsolution.clear()
                 bestsolution.add(frozenset(currentsolution))
 
-        elif bestsolutionlen == n or bestsolutionlen == n - 1:
+        elif n in range(bestsolutionlen, bestsolutionlen+WINDOW) and n <= MAX_HYP_LEN:
+            # print("ELIF: {}".format(n))
             continue
         else:
-            continue
+            break
 
     # Return all the solutions, the best solutions and the best score
     return solutions, bestsolution, best_coverage

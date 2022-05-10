@@ -7,7 +7,11 @@ from logic_program import *
 from clist import CList
 import clingo
 from itertools import chain, combinations
+from problog.program import PrologString
+from problog import get_evaluatable
 import sys
+
+sys.stderr = open('/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/problog.log', 'w')
 
 DEFAULT_FILE = 'experiments/smokes.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
@@ -21,8 +25,8 @@ BETA = 1
 # PARAMETERS
 MAX_PRODUCERS = 10
 MAX_CONSUMERS = 10
-MAX_RULES = 5
-MAX_CONDITIONS = 5
+MAX_RULES = 2
+MAX_CONDITIONS = 3
 
 om = HumanOutputWrapper()
 
@@ -507,7 +511,6 @@ def create_top(modedecs):
     for r in finalrules:
         logging.debug("Final rule: {}".format(r))
 
-
     # For each rule in the final rules, get it's abducible and weight
     for rule in finalrules:
         # Get abducible
@@ -564,7 +567,8 @@ def create_abds_with_constants(rules, filename, background):
     if constant_flattening_required:
         # Create temporary file and write background and grounding rules for abducibles
         logging.debug("Writing to temporary file for grounding abducibles")
-        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + filename.split("/")[-1]
+        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + \
+                   filename.split("/")[-1]
         ensure_dir(tempfile)
         f = open(tempfile, 'w')
         f.write(finalfile)
@@ -621,14 +625,17 @@ def process_file(filename):
     for r in top:
         finalfile += str(r)
 
-    tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_" + filename.split("/")[-1]
-    ensure_dir(tempfile)
-    f = open(tempfile, 'w')
-    f.write(finalfile)
-    f.close()
-    logging.debug('Temporary file created in %s' % tempfile)
+    for pf in pfs:
+        pf_str = str(pfs[pf]) + '::' + pf + '\n'
+        finalfile += pf_str
 
-    return tempfile, const_flattened_weights, fullmodedecs, pfs, exs
+    for ex in exs:
+        ex_str = 'query(' + ex + '). \n'
+        finalfile += ex_str
+
+    logging.debug("File contents processed")
+
+    return finalfile, const_flattened_weights, fullmodedecs, pfs, exs
 
 
 # Post Processing
@@ -827,20 +834,16 @@ def probfoil_acc(expected, actual):
         false_negative += fn
         # TODO: Normalise? Maybe use TP + TN / |E|
     acc = (true_positive + true_negative) / (true_positive + true_negative + false_positive + false_negative)
-    other = (true_positive + true_negative) / len(expected)
-    return 1 - ((true_positive + true_negative) / len(expected))
+    alt_acc = (true_positive + true_negative) / len(expected)
+    return 1 - alt_acc
 
 
 def alt_h_score(h_len, h_loss, a):
-     return ((h_len * a) * ALPHA) + (h_loss * BETA)
-
-
-# def alt_h_score(h_len, h_loss, a):
-#     return ((h_len * a) * 0.2) + (h_loss * 0.8)
+    return ((h_len * a) * ALPHA) + (h_loss * BETA)
 
 
 # Execute Clingo to check solutions
-def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=probfoil_acc):
+def execute(file_contents, rule_weights, modedecs, prob_facts, examples, loss_func=probfoil_acc):
     # proc = subprocess.Popen(SOLVER + ' < ' + file, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     solutions = {}
@@ -854,34 +857,46 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
     alpha = 1 / max_hypothesis_length
 
     logging.debug("Starting to make total choices.")
-    total_choices = get_total_choices_with_probs(prob_facts)
     logging.debug("Total choices made.")
+
+    total_time_runs = 0
+
 
     for h in hypotheses:
         # Examples you are trying to reach
-        prob_examples_h = {e: 0 for e in examples}
         logging.debug("Hypothesis: {}".format(h))
 
-        for tc in total_choices:
-            logging.debug("Hypothesis: {}, TC: {}".format(h, tc))
-            # Create a Control object that will unify models against the appropriate
-            # predicates. Then load the asp file that encodes the problem domain.
+        # TODO: Call problog and process outputs
+        # file_contents += h
 
-            ctrl = clingo.Control(["0", "--warn=none"])
-            ctrl.load(filename)
+        # Split the abducibles for the hypothesis into different lines to write individually
+        independent_abds = h.split('.', MAX_RULES)
 
-            # Add facts as required and ground the program
-            instance = h + tc
-            ctrl.add("base", [], instance)
-            ctrl.ground([("base", [])])
+        model = ''
 
-            # Solve the program and get all models
-            models = get_models(control=ctrl)
+        # If the hypothesis is empty, you still need to provide a dummy rule to ground the rule/2 predicate correctly
+        if len(independent_abds) == 1:
+            model += "rule(dummy, 0).\n "
 
-            # Calculate probability for each example given the hypothesis by adding the probability of the current
-            # total choice
-            check_models_for_examples(actual=prob_examples_h, models=models,
-                                      tc_probability=total_choices[tc])
+        # Write each rule abducible from h on a separate line
+        for abd in independent_abds:
+            if abd.strip() != '':
+                abd_str = abd + '. \n'
+                model += abd_str
+
+
+
+        # Open the base file and append it to the model
+        model += file_contents
+        start = time.perf_counter()
+        result = get_evaluatable().create_from(PrologString(model)).evaluate()
+        end = time.perf_counter()
+
+        # print("RUN TIME TAKEN: {:0.3f}".format(end - start))
+        total_time_runs += (end - start)
+
+        prob_examples_h = {str(r): result[r] for r in result}
+
 
         # Calculate loss and score of the hypothesis
         loss = loss_func(expected=examples, actual=prob_examples_h)
@@ -919,16 +934,17 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
         logging.debug("HYpothesis: {}, Score: {}".format(h, score))
 
     # Return all the solutions, the best solutions and the best score
+    print("TOTAL TIME RUN: {:0.4f}".format(total_time_runs))
     return solutions, bestsolution, bestscore
 
 
 def find_solutions(file):
     om.toOut('Finding Solutions', size=2)
 
-    filename, weights, modedecs, pfs, exs = process_file(file)
-    om.toOut('Successfully processed {}. Now starting the solver'.format(filename))
+    file_contents, weights, modedecs, pfs, exs = process_file(file)
+    om.toOut('Successfully processed file. Now starting the solver')
     om.toOut('Invoking {}'.format(SOLVER))
-    solutionshere, bestsolutionhere, bestscorehere = execute(filename=filename, rule_weights=weights, modedecs=modedecs,
+    solutionshere, bestsolutionhere, bestscorehere = execute(file_contents=file_contents, rule_weights=weights, modedecs=modedecs,
                                                              prob_facts=pfs, examples=exs)
     return solutionshere, bestsolutionhere, bestscorehere
 

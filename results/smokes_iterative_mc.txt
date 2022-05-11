@@ -1,0 +1,210 @@
+Experiment 1 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 1
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.82
+Found Solution in 0.2721 seconds
+Experiment 2 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 2
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0108 seconds
+Experiment 3 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0112 seconds
+Experiment 4 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 4
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0378 seconds
+Experiment 5 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0319 seconds
+Experiment 6 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 6
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0358 seconds
+Experiment 7 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 7
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0343 seconds
+Experiment 8 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 8
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0153 seconds
+Experiment 9 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 9
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0347 seconds
+Experiment 10 \n
+Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 10
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 10
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 1.00
+Found Solution in 1.0357 seconds

@@ -936,7 +936,7 @@ if __name__ == "__main__":
     WINDOW = args.window if args.window else 5
     MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len else 10
     EPSILON = args.epsilon if args.epsilon else 1
-    FILENAME = args.filename if args.filenames else DEFAULT_FILE
+    FILENAME = args.filename if args.filename else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules else 5
     MAX_CONDITIONS = args.max_conditions if args.max_conditions else 5
 

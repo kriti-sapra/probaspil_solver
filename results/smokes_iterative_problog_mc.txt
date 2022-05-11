@@ -14,12 +14,12 @@ Successfully processe. Now starting the solver
 ----Best Solution----
 
 Hypothesis: 
-smoke(A):-  person(A), influences(B,A), person(B).
-
 smoke(A):-  person(A), stress(A).
 
+smoke(A):-  person(A), influences(B,A), person(B).
+
 Score: 0.93
-Found Solution in 0.1613 seconds
+Found Solution in 0.1580 seconds
 Experiment 2 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -36,12 +36,12 @@ Successfully processe. Now starting the solver
 ----Best Solution----
 
 Hypothesis: 
-smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
-
 smoke(A):-  person(A), stress(A).
 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
 Score: 1.00
-Found Solution in 4.1646 seconds
+Found Solution in 4.1414 seconds
 Experiment 3 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -63,7 +63,7 @@ smoke(A):-  person(A), stress(A).
 smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 12.3605 seconds
+Found Solution in 12.3515 seconds
 Experiment 4 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -85,7 +85,7 @@ smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 12.3782 seconds
+Found Solution in 12.2344 seconds
 Experiment 5 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -107,7 +107,7 @@ smoke(A):-  person(A), stress(A).
 smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 12.3549 seconds
+Found Solution in 12.3062 seconds
 Experiment 6 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -124,12 +124,12 @@ Successfully processe. Now starting the solver
 ----Best Solution----
 
 Hypothesis: 
-smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
-
 smoke(A):-  person(A), stress(A).
 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
 Score: 1.00
-Found Solution in 12.2363 seconds
+Found Solution in 12.3449 seconds
 Experiment 7 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -151,7 +151,7 @@ smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 12.3668 seconds
+Found Solution in 12.3066 seconds
 Experiment 8 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -173,7 +173,7 @@ smoke(A):-  person(A), stress(A).
 smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 12.4814 seconds
+Found Solution in 12.4662 seconds
 Experiment 9 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -195,7 +195,7 @@ smoke(A):-  person(A), stress(A).
 smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 12.3421 seconds
+Found Solution in 12.3586 seconds
 Experiment 10 \n
 Executing ASPAL on file experiments/smokes.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -217,4 +217,4 @@ smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 12.3597 seconds
+Found Solution in 12.3741 seconds

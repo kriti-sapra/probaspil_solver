@@ -1,5 +1,5 @@
 Experiment 1 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 1
@@ -9,18 +9,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild).
+smoke(A):-  person(A), influences(B,A), person(B).
 
-Score: 0.82
-Found Solution in 0.2721 seconds
+smoke(A):-  person(A), stress(A).
+
+Score: 0.93
+Found Solution in 0.0807 seconds
 Experiment 2 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 2
@@ -30,18 +32,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 1.0108 seconds
+Found Solution in 1.5302 seconds
 Experiment 3 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 3
@@ -51,18 +55,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0112 seconds
+Found Solution in 4.2903 seconds
 Experiment 4 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 4
@@ -72,18 +78,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0378 seconds
+Found Solution in 4.2847 seconds
 Experiment 5 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 5
@@ -93,18 +101,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0319 seconds
+Found Solution in 4.3025 seconds
 Experiment 6 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 6
@@ -114,18 +124,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0358 seconds
+Found Solution in 4.3035 seconds
 Experiment 7 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 7
@@ -135,18 +147,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 1.0343 seconds
+Found Solution in 4.3008 seconds
 Experiment 8 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 8
@@ -156,18 +170,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0153 seconds
+Found Solution in 4.2987 seconds
 Experiment 9 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 9
@@ -177,18 +193,20 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
 
 Score: 1.00
-Found Solution in 1.0347 seconds
+Found Solution in 4.2939 seconds
 Experiment 10 \n
-Executing ASPAL on file experiments/surf_const_example.lp using solver .
+Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
 Max rules: 5
 Max conditions: 10
@@ -198,13 +216,15 @@ Epsilon: 1
 Window: 5
 Max Hypothesis Length: 10
 ---- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_surf_const_example.lp. Now starting the solver
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
 Invoking 
 
 ----Best Solution----
 
 Hypothesis: 
-surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
 
 Score: 1.00
-Found Solution in 1.0357 seconds
+Found Solution in 4.2867 seconds

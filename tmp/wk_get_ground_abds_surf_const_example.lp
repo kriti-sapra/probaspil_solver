@@ -5,7 +5,7 @@ temp(mild).
 temp(cold).
 
 
-rule(r((idsuMY,c(B),l)),1) :-temp(B). 
-rule(r((idsuMY,c(B),l),(idwi43B,c,l(1))),2) :-temp(B). 
-rule(r((idsuMY,c(B),l),(idsuqLC,c(D),l(1))),2) :-temp(B), temp(D). 
-rule(r((idsuMY,c(B),l),(idsuqLC,c(D),l(1)),(idwi43B,c,l(1))),3) :-temp(B), temp(D). 
+rule(r((idsutgB,c(B),l)),1) :-temp(B). 
+rule(r((idsutgB,c(B),l),(idwiVjB,c,l(1))),2) :-temp(B). 
+rule(r((idsutgB,c(B),l),(idsuojB,c(D),l(1))),2) :-temp(B), temp(D). 
+rule(r((idsutgB,c(B),l),(idsuojB,c(D),l(1)),(idwiVjB,c,l(1))),3) :-temp(B), temp(D). 

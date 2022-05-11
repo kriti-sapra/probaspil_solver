@@ -1,0 +1,674 @@
+Experiment 1 
+
+Executing ASPAL on file experiments/surf_const_example.lp using solver /Users/kritisapra/Downloads/ASPAL/clingo.
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log
+Max rules: 2
+Max conditions: 1
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking /Users/kritisapra/Downloads/ASPAL/clingo
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+
+----Solution 2----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.68
+
+----Solution 3----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.92
+
+----Solution 4----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.92
+
+----Solution 5----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.92
+
+----Solution 6----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.78
+
+----Solution 7----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.92
+
+----Solution 8----
+
+Hypothesis: 
+surf(A,mild):-  var1(A).
+
+Score: 0.83
+
+----Solution 9----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+Score: 0.67
+
+----Solution 10----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+surf(A,cold):-  var1(A).
+
+Score: 0.93
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+Found Solution in 0.2775 seconds
+Experiment 2 
+
+Executing ASPAL on file experiments/surf_const_example.lp using solver /Users/kritisapra/Downloads/ASPAL/clingo.
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log
+Max rules: 2
+Max conditions: 2
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking /Users/kritisapra/Downloads/ASPAL/clingo
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+
+----Solution 2----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.50
+
+----Solution 3----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.92
+
+----Solution 4----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold), windok(A).
+
+Score: 0.92
+
+----Solution 5----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold), windok(A).
+
+Score: 0.92
+
+----Solution 6----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.51
+
+----Solution 7----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.75
+
+----Solution 8----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.75
+
+----Solution 9----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.75
+
+----Solution 10----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.61
+
+----Solution 11----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.75
+
+----Solution 12----
+
+Hypothesis: 
+surf(A,mild):-  var1(A).
+
+Score: 0.75
+
+----Solution 13----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+Score: 0.59
+
+----Solution 14----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.83
+
+----Solution 15----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.83
+
+----Solution 16----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.83
+
+----Solution 17----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.83
+
+----Solution 18----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.67
+
+----Solution 19----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.85
+
+----Solution 20----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.85
+
+----Solution 21----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.85
+
+----Solution 22----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.85
+
+----Solution 23----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.68
+
+----Solution 24----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.95
+
+----Solution 25----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.92
+
+----Solution 26----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.95
+
+----Solution 27----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.92
+
+----Solution 28----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.95
+
+----Solution 29----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.92
+
+----Solution 30----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.95
+
+----Solution 31----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A).
+
+Score: 0.78
+
+----Solution 32----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.92
+
+----Solution 33----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A).
+
+Score: 0.91
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+Found Solution in 0.5858 seconds
+Experiment 3 
+
+Executing ASPAL on file experiments/surf_const_example.lp using solver /Users/kritisapra/Downloads/ASPAL/clingo.
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_surf_const_example.lp. Now starting the solver
+Invoking /Users/kritisapra/Downloads/ASPAL/clingo
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+
+----Solution 2----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.50
+
+----Solution 3----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.92
+
+----Solution 4----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold), windok(A).
+
+Score: 0.92
+
+----Solution 5----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold), windok(A).
+
+Score: 0.92
+
+----Solution 6----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.51
+
+----Solution 7----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.75
+
+----Solution 8----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+Score: 0.75
+
+----Solution 9----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.75
+
+----Solution 10----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.61
+
+----Solution 11----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.75
+
+----Solution 12----
+
+Hypothesis: 
+surf(A,mild):-  var1(A).
+
+Score: 0.75
+
+----Solution 13----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+Score: 0.59
+
+----Solution 14----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.83
+
+----Solution 15----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.83
+
+----Solution 16----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.83
+
+----Solution 17----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.83
+
+----Solution 18----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild), windok(A).
+
+Score: 0.67
+
+----Solution 19----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.85
+
+----Solution 20----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.85
+
+----Solution 21----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.85
+
+----Solution 22----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.85
+
+----Solution 23----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), sunshine(A,mild).
+
+Score: 0.68
+
+----Solution 24----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.95
+
+----Solution 25----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), sunshine(A,mild).
+
+Score: 0.92
+
+----Solution 26----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.95
+
+----Solution 27----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), sunshine(A,cold).
+
+surf(A,cold):-  var1(A).
+
+Score: 0.92
+
+----Solution 28----
+
+Hypothesis: 
+surf(A,mild):-  var1(A), windok(A).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.95
+
+----Solution 29----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), sunshine(A,cold).
+
+Score: 0.92
+
+----Solution 30----
+
+Hypothesis: 
+surf(A,cold):-  var1(A), windok(A).
+
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.95
+
+----Solution 31----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A), windok(A).
+
+Score: 0.78
+
+----Solution 32----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,cold):-  var1(A), windok(A).
+
+Score: 0.92
+
+----Solution 33----
+
+Hypothesis: 
+surf(A,cold):-  var1(A).
+
+surf(A,mild):-  var1(A).
+
+Score: 0.91
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.42
+Found Solution in 0.5870 seconds

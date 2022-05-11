@@ -12,12 +12,14 @@ from problog import get_evaluatable
 import sys
 import argparse
 
-sys.stderr = open('/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/problog.log', 'w')
-
 DEFAULT_FILE = 'experiments/smokes.lp'
-LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
-SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
+ERROR_LOG_FILE = BASE_PATH + '/tmp/problog.log'
+sys.stderr = open(ERROR_LOG_FILE, 'w')
+
+SOLVER = ''
 
 om = HumanOutputWrapper()
 
@@ -34,10 +36,12 @@ def ensure_dir(f):
 def setup_logger():
     ensure_dir(LOG_FILENAME)
 
+    filename = BASE_PATH + '/tmp/aspal.log'
+
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
                         datefmt='%m-%d %H:%M',
-                        filename='/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log',
+                        filename=filename,
                         filemode='w')
     # define a Handler which writes INFO messages or higher to the sys.stderr
     console = logging.StreamHandler()
@@ -558,7 +562,7 @@ def create_abds_with_constants(rules, filename, background):
     if constant_flattening_required:
         # Create temporary file and write background and grounding rules for abducibles
         logging.debug("Writing to temporary file for grounding abducibles")
-        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + \
+        tempfile = BASE_PATH + "/tmp/wk_get_ground_abds_" + \
                    filename.split("/")[-1]
         ensure_dir(tempfile)
         f = open(tempfile, 'w')

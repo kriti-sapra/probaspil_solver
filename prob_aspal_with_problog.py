@@ -10,6 +10,7 @@ from itertools import chain, combinations
 from problog.program import PrologString
 from problog import get_evaluatable
 import sys
+import argparse
 
 sys.stderr = open('/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/problog.log', 'w')
 
@@ -17,19 +18,8 @@ DEFAULT_FILE = 'experiments/smokes.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
-FILENAME = DEFAULT_FILE
-EPSILON = 1
-ALPHA = 1
-BETA = 1
-
-# PARAMETERS
-MAX_PRODUCERS = 10
-MAX_CONSUMERS = 10
-MAX_RULES = 2
-MAX_CONDITIONS = 3
 
 om = HumanOutputWrapper()
-
 
 # LOGGER SETUP
 def ensure_dir(f):
@@ -71,7 +61,8 @@ def print_task():
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
     om.toOut("Epsilon: " + str(EPSILON))
-
+    om.toOut("Weight for length of hypothesis (alpha): " + str(ALPHA))
+    om.toOut("Weight for loss of hypothesis (beta): " + str(BETA))
 
 # PREPROCESSING FILE
 def cartesianProduct(elements):
@@ -949,7 +940,7 @@ def find_solutions(file):
     return solutionshere, bestsolutionhere, bestscorehere
 
 
-def main(filename=FILENAME):
+def main(filename):
     om.toOut('Executing ASPAL on file %s using solver %s.\nDebug logs in %s' % \
              (filename, SOLVER, LOG_FILENAME), type='info')
     print_task()
@@ -961,7 +952,26 @@ def main(filename=FILENAME):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        main(filename=sys.argv[1])
-    else:
-        main()
+    parser = argparse.ArgumentParser(description='Processing probabilistic rule learning task')
+    parser.add_argument("-mr", "--max_rules", dest='max_rules', help="Max Rules", type=int)
+    parser.add_argument("-mc", "--max_conditions", dest='max_conditions', help="Max Conditions", type=int)
+    parser.add_argument("-mp", "--max_producers", dest='max_producers', help="Max Producers", type=int)
+    parser.add_argument("-mcons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
+    parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
+    parser.add_argument("-a", "--alpha", dest='alpha', help="Weight for length", type=float)
+    parser.add_argument("-b", "--beta", dest='beta', help="Weight for loss", type=float)
+    parser.add_argument("-f", required=True, dest='filename',
+                        help="Input file for solver", metavar="FILE")
+    args = parser.parse_args()
+
+    # PARAMETERS
+    MAX_PRODUCERS = args.max_producers if args.max_producers else 10
+    MAX_CONSUMERS = args.max_consumers if args.max_consumers else 10
+    EPSILON = args.epsilon if args.epsilon else 1
+    FILENAME = args.filename if args.max_rules else DEFAULT_FILE
+    MAX_RULES = args.max_rules if args.max_rules else 5
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 5
+    ALPHA = args.alpha if args.alpha else 1
+    BETA = args.beta if args.beta else 1
+
+    main(FILENAME)

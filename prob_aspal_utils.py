@@ -35,6 +35,12 @@ def print_solution(isol, score):
 
 def print_solutions(solutions, best_solution, best_score, time):
     i = 0
+
+    if not best_solution:
+        print("There is no solution to this learning task. ")
+        print('Found Solution in {:.4f} seconds'.format(time))
+        return
+
     for isol in solutions:
         i += 1
         if len(solutions) > 1:

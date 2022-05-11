@@ -8,21 +8,13 @@ from clist import CList
 import clingo
 from itertools import chain, combinations
 import sys
+import argparse
 
-DEFAULT_FILE = 'experiments/smokes.lp'
+DEFAULT_FILE = 'experiments/surf_const_example.lp'
 LOG_FILENAME = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log'
 
 SOLVER = '/Users/kritisapra/Downloads/ASPAL/clingo'
-FILENAME = DEFAULT_FILE
-EPSILON = 1
-
-# PARAMETERS
-MAX_PRODUCERS = 10
-MAX_CONSUMERS = 10
-MAX_RULES = 5
-MAX_CONDITIONS = 5
-WINDOW = 10
-MAX_HYP_LEN = 10
+# FILENAME = DEFAULT_FILE
 
 om = HumanOutputWrapper()
 
@@ -509,7 +501,6 @@ def createTop(modedecs):
     for r in finalrules:
         logging.debug("Final rule: {}".format(r))
 
-
     # For each rule in the final rules, get it's abducible and weight
     for rule in finalrules:
         # Get abducible
@@ -532,6 +523,7 @@ def process_inputs(inputs, delim=''):
             key = args[0]
         out[key] = float(args[1])
     return out
+
 
 # Function that creates rule abducibles with any constants already included by running a preprocessing clingo step
 def create_abds_with_constants(rules, filename, background):
@@ -562,7 +554,8 @@ def create_abds_with_constants(rules, filename, background):
     if constant_flattening_required:
         # Create temporary file and write background and grounding rules for abducibles
         logging.debug("Writing to temporary file for grounding abducibles")
-        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + filename.split("/")[-1]
+        tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_get_ground_abds_" + \
+                   filename.split("/")[-1]
         ensure_dir(tempfile)
         f = open(tempfile, 'w')
         f.write(finalfile)
@@ -891,7 +884,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
                 bestsolution.clear()
                 bestsolution.add(frozenset(currentsolution))
 
-        elif n in range(bestsolutionlen, bestsolutionlen+WINDOW) and n <= MAX_HYP_LEN:
+        elif n in range(bestsolutionlen, bestsolutionlen + WINDOW) and n <= MAX_HYP_LEN:
             # print("ELIF: {}".format(n))
             continue
         else:
@@ -912,7 +905,7 @@ def find_solutions(file):
     return solutionshere, bestsolutionhere, bestscorehere
 
 
-def main(filename=FILENAME):
+def main(filename):
     om.toOut('Executing ASPAL on file %s using solver %s.\nDebug logs in %s' % \
              (filename, SOLVER, LOG_FILENAME), type='info')
     print_task()
@@ -924,7 +917,26 @@ def main(filename=FILENAME):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        main(filename=sys.argv[1])
-    else:
-        main()
+    parser = argparse.ArgumentParser(description='Processing probabilistic rule learning task')
+    parser.add_argument("-mr", "--max_rules", dest='max_rules', help="Max Rules", type=int)
+    parser.add_argument("-mc", "--max_conditions", dest='max_conditions', help="Max Conditions", type=int)
+    parser.add_argument("-mp", "--max_producers", dest='max_producers', help="Max Producers", type=int)
+    parser.add_argument("-mcons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
+    parser.add_argument("-w", "--window", dest='window', help="Window", type=int)
+    parser.add_argument("-mh", "--max_hyp", dest='max_hyp_len', help="Max Hypothesis Length", type=int)
+    parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
+    parser.add_argument("-f", required=True, dest='filename',
+                        help="Input file for solver", metavar="FILE")
+    args = parser.parse_args()
+
+    # PARAMETERS
+    MAX_PRODUCERS = args.max_producers if args.max_producers else 10
+    MAX_CONSUMERS = args.max_consumers if args.max_consumers else 10
+    WINDOW = args.window if args.window else 5
+    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len else 10
+    EPSILON = args.epsilon if args.epsilon else 1
+    FILENAME = args.filename if args.max_rules else DEFAULT_FILE
+    MAX_RULES = args.max_rules if args.max_rules else 5
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 5
+
+    main(FILENAME)

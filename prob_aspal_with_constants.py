@@ -11,7 +11,7 @@ import sys
 import argparse
 
 DEFAULT_FILE = 'experiments/smokes.lp'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''
@@ -60,7 +60,7 @@ def print_task():
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
     om.toOut("Epsilon: " + str(EPSILON))
     om.toOut("Weight for length of hypothesis (alpha): " + str(ALPHA))
-    om.toOut("Weight for loss of hypothesis (beta): "+ str(BETA))
+    om.toOut("Weight for loss of hypothesis (beta): " + str(BETA))
 
 
 # PREPROCESSING FILE

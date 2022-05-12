@@ -1,0 +1,7221 @@
+Experiment 1 
+
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 2.0
+---- Finding Solutions ----
+Successfully processed file. Now starting the solver
+Invoking 
+TOTAL TIME RUN: 136.5840
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.92
+
+----Solution 2----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.49
+
+----Solution 3----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.79
+
+----Solution 4----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.76
+
+----Solution 5----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.59
+
+----Solution 6----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.65
+
+----Solution 7----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.36
+
+----Solution 8----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.65
+
+----Solution 9----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.33
+
+----Solution 10----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.65
+
+----Solution 11----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.70
+
+----Solution 12----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.70
+
+----Solution 13----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.26
+
+----Solution 14----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.70
+
+----Solution 15----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.38
+
+----Solution 16----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 17----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.86
+
+----Solution 18----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.95
+
+----Solution 19----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 20----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.95
+
+----Solution 21----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.95
+
+----Solution 22----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.95
+
+----Solution 23----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 1.00
+
+----Solution 24----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 1.00
+
+----Solution 25----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.95
+
+----Solution 26----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 1.00
+
+----Solution 27----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 1.00
+
+----Solution 28----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 29----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 30----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 31----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 32----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 33----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 34----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 35----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.75
+
+----Solution 36----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.47
+
+----Solution 37----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.75
+
+----Solution 38----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.43
+
+----Solution 39----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.75
+
+----Solution 40----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.81
+
+----Solution 41----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.81
+
+----Solution 42----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.37
+
+----Solution 43----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.81
+
+----Solution 44----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.49
+
+----Solution 45----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.52
+
+----Solution 46----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.81
+
+----Solution 47----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.49
+
+----Solution 48----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.81
+
+----Solution 49----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 50----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 51----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.42
+
+----Solution 52----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 53----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.54
+
+----Solution 54----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.52
+
+----Solution 55----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.52
+
+----Solution 56----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.52
+
+----Solution 57----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.57
+
+----Solution 58----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.57
+
+----Solution 59----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.52
+
+----Solution 60----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.57
+
+----Solution 61----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.57
+
+----Solution 62----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.49
+
+----Solution 63----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.81
+
+----Solution 64----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.86
+
+----Solution 65----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.86
+
+----Solution 66----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.42
+
+----Solution 67----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.86
+
+----Solution 68----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.54
+
+----Solution 69----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.49
+
+----Solution 70----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.54
+
+----Solution 71----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.54
+
+----Solution 72----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.42
+
+----Solution 73----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.54
+
+----Solution 74----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.54
+
+----Solution 75----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 76----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 77----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.42
+
+----Solution 78----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.86
+
+----Solution 79----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.54
+
+----Solution 80----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.91
+
+----Solution 81----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.47
+
+----Solution 82----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.91
+
+----Solution 83----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.59
+
+----Solution 84----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.47
+
+----Solution 85----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.91
+
+----Solution 86----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.59
+
+----Solution 87----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.47
+
+----Solution 88----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.47
+
+----Solution 89----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.59
+
+----Solution 90----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.95
+
+----Solution 91----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.62
+
+----Solution 92----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 93----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.59
+
+----Solution 94----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.91
+
+----Solution 95----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.96
+
+----Solution 96----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.96
+
+----Solution 97----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.53
+
+----Solution 98----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.96
+
+----Solution 99----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.64
+
+----Solution 100----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.62
+
+----Solution 101----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.62
+
+----Solution 102----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.62
+
+----Solution 103----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.68
+
+----Solution 104----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 105----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.62
+
+----Solution 106----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 107----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.68
+
+----Solution 108----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.59
+
+----Solution 109----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 110----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.96
+
+----Solution 111----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.96
+
+----Solution 112----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.53
+
+----Solution 113----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.96
+
+----Solution 114----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.64
+
+----Solution 115----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.59
+
+----Solution 116----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.64
+
+----Solution 117----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.64
+
+----Solution 118----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.53
+
+----Solution 119----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.64
+
+----Solution 120----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.64
+
+----Solution 121----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.96
+
+----Solution 122----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.96
+
+----Solution 123----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.53
+
+----Solution 124----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.96
+
+----Solution 125----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.64
+
+----Solution 126----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.58
+
+----Solution 127----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.70
+
+----Solution 128----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.58
+
+----Solution 129----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.70
+
+----Solution 130----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.58
+
+----Solution 131----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.58
+
+----Solution 132----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.70
+
+----Solution 133----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.68
+
+----Solution 134----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.68
+
+----Solution 135----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 136----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 137----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 138----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 139----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 140----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.73
+
+----Solution 141----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.64
+
+----Solution 142----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.96
+
+----Solution 143----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.58
+
+----Solution 144----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 145----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.64
+
+----Solution 146----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 147----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 148----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.58
+
+----Solution 149----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 150----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 151----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.58
+
+----Solution 152----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.70
+
+----Solution 153----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.63
+
+----Solution 154----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 155----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.63
+
+----Solution 156----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 157----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.63
+
+----Solution 158----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.63
+
+----Solution 159----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 160----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.68
+
+----Solution 161----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.68
+
+----Solution 162----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.73
+
+----Solution 163----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.73
+
+----Solution 164----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.68
+
+----Solution 165----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.73
+
+----Solution 166----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.73
+
+----Solution 167----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.68
+
+----Solution 168----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.73
+
+----Solution 169----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.73
+
+----Solution 170----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.68
+
+----Solution 171----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.73
+
+----Solution 172----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.73
+
+----Solution 173----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 174----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 175----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 176----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 177----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.73
+
+----Solution 178----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.78
+
+----Solution 179----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.73
+
+----Solution 180----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.78
+
+----Solution 181----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.78
+
+----Solution 182----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 183----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.78
+
+----Solution 184----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.78
+
+----Solution 185----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.73
+
+----Solution 186----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.73
+
+----Solution 187----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.78
+
+----Solution 188----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.64
+
+----Solution 189----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 190----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 191----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.58
+
+----Solution 192----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 193----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 194----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.58
+
+----Solution 195----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.70
+
+----Solution 196----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.63
+
+----Solution 197----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.75
+
+----Solution 198----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.63
+
+----Solution 199----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.75
+
+----Solution 200----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.63
+
+----Solution 201----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.63
+
+----Solution 202----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.75
+
+----Solution 203----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 204----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 205----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.58
+
+----Solution 206----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 207----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.70
+
+----Solution 208----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 209----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.63
+
+----Solution 210----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 211----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 212----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.63
+
+----Solution 213----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 214----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 215----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.63
+
+----Solution 216----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.63
+
+----Solution 217----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 218----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.63
+
+----Solution 219----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 220----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.63
+
+----Solution 221----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 222----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.63
+
+----Solution 223----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.63
+
+----Solution 224----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.75
+
+----Solution 225----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 226----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.80
+
+----Solution 227----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 228----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 229----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.80
+
+----Solution 230----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.68
+
+----Solution 231----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.68
+
+----Solution 232----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.80
+
+----Solution 233----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.68
+
+----Solution 234----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.78
+
+----Solution 235----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.78
+
+----Solution 236----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.78
+
+----Solution 237----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 238----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 239----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.78
+
+----Solution 240----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 241----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 242----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 243----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 244----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 245----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.75
+
+----Solution 246----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 247----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 248----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 249----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 250----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 251----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 252----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 253----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 254----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 255----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 256----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 257----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 258----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 259----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 260----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.78
+
+----Solution 261----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.78
+
+----Solution 262----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 263----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 264----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.78
+
+----Solution 265----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 266----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 267----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.78
+
+----Solution 268----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 269----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 270----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.78
+
+----Solution 271----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 272----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 273----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 274----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 275----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.78
+
+----Solution 276----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 277----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.83
+
+----Solution 278----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 279----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 280----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 281----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 282----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 283----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 284----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 285----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 286----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 287----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.89
+
+----Solution 288----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.75
+
+----Solution 289----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.80
+
+----Solution 290----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.80
+
+----Solution 291----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 292----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.80
+
+----Solution 293----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.80
+
+----Solution 294----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 295----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 296----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 297----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 298----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 299----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 300----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 301----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 302----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 303----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 304----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 305----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.68
+
+----Solution 306----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 307----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.80
+
+----Solution 308----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 309----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 310----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 311----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 312----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 313----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 314----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 315----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 316----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 317----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 318----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 319----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 320----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 321----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 322----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 323----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 324----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.85
+
+----Solution 325----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 326----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.91
+
+----Solution 327----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 328----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 329----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.91
+
+----Solution 330----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 331----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 332----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.91
+
+----Solution 333----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 334----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.83
+
+----Solution 335----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.83
+
+----Solution 336----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 337----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.89
+
+----Solution 338----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 339----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 340----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 341----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.83
+
+----Solution 342----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 343----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.89
+
+----Solution 344----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 345----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 346----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 347----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.89
+
+----Solution 348----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.89
+
+----Solution 349----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 350----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.89
+
+----Solution 351----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.89
+
+----Solution 352----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 353----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 354----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.94
+
+----Solution 355----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.94
+
+----Solution 356----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 357----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 358----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 359----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 360----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 361----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.94
+
+----Solution 362----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.80
+
+----Solution 363----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 364----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 365----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.74
+
+----Solution 366----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 367----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 368----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 369----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.85
+
+----Solution 370----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 371----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 372----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 373----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 374----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 375----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 376----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 377----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 378----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.85
+
+----Solution 379----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.74
+
+----Solution 380----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 381----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 382----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 383----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 384----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 385----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 386----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 387----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 388----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 389----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 390----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 391----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 392----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 393----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.91
+
+----Solution 394----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 395----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 396----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 397----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 398----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.91
+
+----Solution 399----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 400----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 401----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 402----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 403----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.96
+
+----Solution 404----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 405----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 406----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 407----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 408----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.83
+
+----Solution 409----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 410----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 411----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.83
+
+----Solution 412----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 413----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 414----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 415----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.89
+
+----Solution 416----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 417----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 418----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.89
+
+----Solution 419----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 420----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 421----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.94
+
+----Solution 422----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.94
+
+----Solution 423----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 424----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 425----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 426----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 427----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 428----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.94
+
+----Solution 429----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 430----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.89
+
+----Solution 431----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 432----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 433----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.89
+
+----Solution 434----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 435----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 436----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.94
+
+----Solution 437----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.94
+
+----Solution 438----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 439----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 440----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 441----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 442----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 443----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.94
+
+----Solution 444----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 445----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 446----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.94
+
+----Solution 447----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.94
+
+----Solution 448----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 449----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 450----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 451----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 452----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 453----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.94
+
+----Solution 454----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 455----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.99
+
+----Solution 456----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.99
+
+----Solution 457----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 458----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 459----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.99
+
+----Solution 460----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 461----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 462----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.99
+
+----Solution 463----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.94
+
+----Solution 464----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 465----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 466----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.74
+
+----Solution 467----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 468----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.85
+
+----Solution 469----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 470----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.79
+
+----Solution 471----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 472----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 473----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.79
+
+----Solution 474----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 475----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 476----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.79
+
+----Solution 477----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.79
+
+----Solution 478----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 479----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 480----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 481----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 482----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 483----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 484----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 485----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.91
+
+----Solution 486----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 487----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 488----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 489----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 490----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.96
+
+----Solution 491----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 492----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 493----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 494----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 495----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 496----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 497----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 498----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 499----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 500----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 501----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.91
+
+----Solution 502----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 503----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.79
+
+----Solution 504----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.91
+
+----Solution 505----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 506----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 507----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 508----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 509----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 510----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.96
+
+----Solution 511----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 512----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 513----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 514----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 515----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 516----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 517----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 518----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 519----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.96
+
+----Solution 520----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 521----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 522----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 523----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.84
+
+----Solution 524----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 525----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 526----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Solution 527----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.89
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.26
+Found Solution in 137.7910 seconds
+Experiment 2 
+
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 0.1
+Weight for loss of hypothesis (beta): 1.9
+---- Finding Solutions ----
+Successfully processed file. Now starting the solver
+Invoking 

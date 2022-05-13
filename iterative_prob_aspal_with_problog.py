@@ -14,6 +14,7 @@ import argparse
 
 
 DEFAULT_FILE = 'experiments/smokes.lp'
+# BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
 BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
@@ -834,8 +835,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
     # Sort hypotheses by length
     sorted_h = sorted(hypotheses.items(), key=lambda x: x[1])
     logging.debug("Hypotheses made!")
-    max_hypothesis_length = sorted_h[len(sorted_h) - 1]
-    alpha = 1
+    filtered_h = [(k, v) for k, v in sorted_h if v <= MAX_HYP_LEN]
 
     logging.debug("Starting to make total choices.")
     logging.debug("Total choices made.")
@@ -843,10 +843,10 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
     total_time_runs = 0
 
     # Traverse hypotheses with shortest first
-    for (h, n) in sorted_h:
-        logging.debug("H: {}, LENGTH: {}".format(h, n))
+    for (h, n) in filtered_h:
+        # logging.debug("H: {}, LENGTH: {}".format(h, n))
         # Examples you are trying to reach
-        logging.debug("Hypothesis: {}".format(h))
+        # logging.debug("Hypothesis: {}".format(h))
 
         independent_abds = h.split('.')
 
@@ -898,15 +898,14 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
             if bestsolutionlen == n and best_coverage == coverage:
                 # If the coverage is the same as best coverage and the same length then you add the hypothesis to best solutions
                 bestsolution.add(frozenset(currentsolution))
-            elif best_coverage < coverage:
+            else:
                 # If the coverage is more than currenty best coverage, then the best solution set has to be cleared
                 best_coverage = coverage
                 bestsolutionlen = n
                 bestsolution.clear()
                 bestsolution.add(frozenset(currentsolution))
 
-        elif n in range(bestsolutionlen, bestsolutionlen + WINDOW) and n <= MAX_HYP_LEN:
-            # print("ELIF: {}".format(n))
+        elif n <= bestsolutionlen + WINDOW:
             continue
         else:
             break
@@ -945,7 +944,7 @@ if __name__ == "__main__":
     parser.add_argument("-w", "--window", dest='window', help="Window", type=int)
     parser.add_argument("-mh", "--max_hyp", dest='max_hyp_len', help="Max Hypothesis Length", type=int)
     parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
-    parser.add_argument("-f", required=True, dest='filename',
+    parser.add_argument("-f", dest='filename',
                         help="Input file for solver", metavar="FILE")
     args = parser.parse_args()
 
@@ -953,7 +952,7 @@ if __name__ == "__main__":
     MAX_PRODUCERS = args.max_producers if args.max_producers else 10
     MAX_CONSUMERS = args.max_consumers if args.max_consumers else 10
     WINDOW = args.window if args.window else 5
-    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len else 10
+    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len else 20
     EPSILON = args.epsilon if args.epsilon else 1
     FILENAME = args.filename if args.filename else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules else 5

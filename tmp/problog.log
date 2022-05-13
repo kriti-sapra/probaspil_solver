@@ -1,552 +1,3102 @@
-Grounding: 0.0245s
+Grounding: 0.0457s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0001s
 
-Compiling SDD: 0.0001s
+Compiling SDD: 0.0023s
 
-Grounding: 0.0262s
+Grounding: 0.0520s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0001s
 
-Compiling SDD: 0.0001s
+Compiling SDD: 0.0002s
 
-Grounding: 0.0310s
+Grounding: 0.0936s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.1556s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0239s
+Grounding: 0.0849s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0003s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0004s
 
-Grounding: 0.0237s
-
-Cycle breaking: 0.0001s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0261s
+Grounding: 0.0565s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0234s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0251s
+Grounding: 0.0592s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
+Grounding: 0.0731s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0002s
 
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0237s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0001s
-
-Grounding: 0.0234s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0262s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0261s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0260s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0260s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0261s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0255s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0001s
-
-Grounding: 0.0259s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0261s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0246s
+Grounding: 0.0619s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0246s
+Grounding: 0.0569s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0265s
+Grounding: 0.0552s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0244s
+Grounding: 0.0607s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0258s
+Grounding: 0.0495s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0241s
+Grounding: 0.0393s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0243s
+Grounding: 0.1044s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0542s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0245s
+Grounding: 0.0499s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0270s
+Grounding: 0.0526s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0445s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0427s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0424s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
 
 Cycle breaking: 0.0002s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0244s
+Grounding: 0.0522s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0428s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0260s
+Grounding: 0.0424s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
+Grounding: 0.0412s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0318s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0001s
-
-Grounding: 0.0255s
+Grounding: 0.0491s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0234s
+Grounding: 0.0444s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0238s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0240s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0257s
+Grounding: 0.0484s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0319s
+Grounding: 0.0440s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0001s
+Compiling SDD: 0.0002s
 
-Grounding: 0.0251s
-
-Cycle breaking: 0.0001s
-
-Compiling SDD: 0.0001s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0234s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0237s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0235s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0259s
+Grounding: 0.0454s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0265s
+Grounding: 0.0423s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0378s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0260s
+Grounding: 0.0419s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0257s
+Grounding: 0.0405s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0417s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0261s
+Grounding: 0.0371s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0258s
+Grounding: 0.0440s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0455s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0458s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0433s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0431s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0256s
+Grounding: 0.0422s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0259s
+Grounding: 0.0430s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0252s
+Grounding: 0.0414s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0232s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0314s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0001s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0233s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0235s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0251s
+Grounding: 0.0445s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0250s
+Grounding: 0.0422s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0401s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0376s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0253s
+Grounding: 0.0367s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0260s
+Grounding: 0.0369s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0248s
+Grounding: 0.0381s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0249s
+Grounding: 0.0394s
 
 Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
+Grounding: 0.0362s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0002s
 
-Grounding: 0.0235s
+Grounding: 0.0359s
 
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0235s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0232s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0234s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0236s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0237s
-
-Cycle breaking: 0.0000s
-
-Compiling SDD: 0.0000s
-
-Grounding: 0.0319s
-
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0001s
 
 Compiling SDD: 0.0001s
 
-Grounding: 0.0233s
+Grounding: 0.0397s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0001s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
+Grounding: 0.0374s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0001s
 
-Grounding: 0.0235s
+Grounding: 0.0487s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0002s
 
-Grounding: 0.0235s
+Grounding: 0.0409s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0001s
 
-Grounding: 0.0236s
+Grounding: 0.0371s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0001s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0001s
 
-Grounding: 0.0237s
+Grounding: 0.0361s
 
-Cycle breaking: 0.0000s
+Cycle breaking: 0.0002s
 
-Compiling SDD: 0.0000s
+Compiling SDD: 0.0002s
+
+Grounding: 0.0336s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0353s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0405s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0362s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0489s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0392s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0488s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0412s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0429s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0381s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0337s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0453s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0349s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0342s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0371s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0344s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0345s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0348s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0426s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0369s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0346s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0354s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0352s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0337s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0358s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0378s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0347s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0404s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0417s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0376s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0371s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0381s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0364s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0404s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0408s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0393s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0384s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0409s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0382s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0475s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0374s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0380s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0363s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0364s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0378s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0401s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0423s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0381s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0457s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0371s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0383s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0337s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0337s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0334s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0348s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0384s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0372s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0373s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0409s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0512s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0373s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0421s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0383s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0417s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0372s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0372s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0368s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0468s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0417s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0348s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0360s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0434s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0388s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0462s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0356s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0392s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0425s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0410s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0345s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0465s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0376s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0362s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0344s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0451s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0374s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0648s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0365s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0335s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0404s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0337s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0466s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0368s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0413s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0370s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0372s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0381s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0435s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0477s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0416s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.1314s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.2914s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.1542s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0517s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0488s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0411s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0409s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0515s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0426s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0410s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0421s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0405s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0420s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0383s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0445s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0398s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0480s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0416s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0491s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0459s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0473s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0363s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0360s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0374s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0583s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0371s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0506s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0393s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0398s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0374s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0373s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0427s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0341s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0352s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0480s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0420s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0380s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0432s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0429s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0416s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0388s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0425s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0416s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0447s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0422s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0415s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0417s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0431s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0425s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0405s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0484s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0388s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0439s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0426s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0438s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0541s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0459s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0409s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0432s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0388s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0383s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0423s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0432s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0503s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0408s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0420s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0413s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0427s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0392s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0467s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0408s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0403s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0401s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0408s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0417s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0433s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0356s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0397s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0393s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0431s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0411s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0469s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0393s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0344s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0367s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0346s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0349s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0411s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0376s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0397s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0352s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0368s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0373s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0381s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0376s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0475s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0450s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0442s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0421s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0466s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0362s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0349s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0354s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0413s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0401s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0504s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0435s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0423s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0419s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0385s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0457s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0356s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0431s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0383s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0504s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0404s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0416s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0428s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0420s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0420s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0377s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0387s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0413s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0441s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0510s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0424s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0434s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0433s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0435s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0421s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0411s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0384s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0392s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0410s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0401s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0391s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0406s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0530s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0392s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0386s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0397s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0437s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0434s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0509s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0433s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0414s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0422s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0411s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0418s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0430s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0432s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0489s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0426s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0412s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0427s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0415s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0436s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0425s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0398s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0511s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0389s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0394s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0393s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0415s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0384s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0456s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0003s
+
+Grounding: 0.0480s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0454s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0431s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0004s
+
+Grounding: 0.0375s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0379s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0440s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0445s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0513s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0412s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0410s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0449s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0444s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0450s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0409s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0400s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0399s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0445s
+
+Cycle breaking: 0.0003s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0397s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0390s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0398s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0446s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0395s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0521s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0439s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0452s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0407s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0396s
+
+Cycle breaking: 0.0002s
+
+Compiling SDD: 0.0002s
+
+Grounding: 0.0433s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0402s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0423s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0431s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0500s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
+
+Grounding: 0.0398s
+
+Cycle breaking: 0.0001s
+
+Compiling SDD: 0.0001s
 

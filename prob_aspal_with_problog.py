@@ -855,12 +855,12 @@ def execute(file_contents, rule_weights, modedecs, prob_facts, examples, loss_fu
     logging.debug("Starting to make total choices.")
     logging.debug("Total choices made.")
 
-    total_time_runs = 0
-
+    runs = 0
 
     for h in hypotheses:
         # Examples you are trying to reach
         logging.debug("Hypothesis: {}".format(h))
+        runs += 1
 
         # TODO: Call problog and process outputs
         # file_contents += h
@@ -884,12 +884,8 @@ def execute(file_contents, rule_weights, modedecs, prob_facts, examples, loss_fu
 
         # Open the base file and append it to the model
         model += file_contents
-        start = time.perf_counter()
         result = get_evaluatable().create_from(PrologString(model)).evaluate()
-        end = time.perf_counter()
-
         # print("RUN TIME TAKEN: {:0.3f}".format(end - start))
-        total_time_runs += (end - start)
 
         prob_examples_h = {str(r): result[r] for r in result}
 
@@ -930,7 +926,7 @@ def execute(file_contents, rule_weights, modedecs, prob_facts, examples, loss_fu
         logging.debug("HYpothesis: {}, Score: {}".format(h, score))
 
     # Return all the solutions, the best solutions and the best score
-    print("TOTAL TIME RUN: {:0.4f}".format(total_time_runs))
+    print("Problog called {} times.".format(runs))
     return solutions, bestsolution, bestscore
 
 

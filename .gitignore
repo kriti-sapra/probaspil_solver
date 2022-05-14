@@ -1,2 +1,3 @@
 tmp/
-*.log
+tmp/aspal.log
+tmp/problog.log

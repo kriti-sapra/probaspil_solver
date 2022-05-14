@@ -843,10 +843,12 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
     total_time_runs = 0
 
     # Traverse hypotheses with shortest first
+    runs = 0
     for (h, n) in filtered_h:
         # logging.debug("H: {}, LENGTH: {}".format(h, n))
         # Examples you are trying to reach
         # logging.debug("Hypothesis: {}".format(h))
+        runs += 1
 
         independent_abds = h.split('.')
 
@@ -910,6 +912,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
         else:
             break
     # Return all the solutions, the best solutions and the best score
+    print("Problog called {} times.".format(runs))
     return solutions, bestsolution, best_coverage
 
 

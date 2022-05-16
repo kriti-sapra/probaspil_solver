@@ -1,0 +1,12 @@
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_smokes.lp. Now starting the solver
+Invoking 

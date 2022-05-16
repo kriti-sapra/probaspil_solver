@@ -7,12 +7,11 @@ from logic_program import *
 from clist import CList
 import clingo
 from itertools import chain, combinations
-import sys
 import argparse
 
 DEFAULT_FILE = 'experiments/smokes.lp'
-# BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+#BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''
@@ -883,6 +882,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
 
         score = alt_h_score(h_len=hypotheses[h], h_loss=loss, a=alpha)
 
+
         # Check if hypothesis is a solution and if you have to update best solution
         if score < EPSILON:
             # Reset current solution to avoid duplicates and contamination
@@ -901,6 +901,9 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
 
             # Change the set to a frozen set and add it to a dictionary with it's score
             solutions[frozenset(currentsolution)] = score
+
+            if loss == 0 and hypotheses[h] == 5:
+                print("OPTIMAL SOLUTION: {} SCORE: {}".format(currentsolution, score))
 
             # Check if the score of this hypothesis is better than the current best score
             if bestscore is None or score < bestscore:
@@ -948,18 +951,18 @@ if __name__ == "__main__":
     parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
     parser.add_argument("-a", "--alpha", dest='alpha', help="Weight for length", type=float)
     parser.add_argument("-b", "--beta", dest='beta', help="Weight for loss", type=float)
-    parser.add_argument("-f", required=True, dest='filename',
+    parser.add_argument("-f", dest='filename',
                         help="Input file for solver", metavar="FILE")
     args = parser.parse_args()
 
     # PARAMETERS
-    MAX_PRODUCERS = args.max_producers if args.max_producers else 10
-    MAX_CONSUMERS = args.max_consumers if args.max_consumers else 10
-    EPSILON = args.epsilon if args.epsilon else 1
-    FILENAME = args.filename if args.filename else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules else 5
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 5
-    ALPHA = args.alpha if args.alpha else 1
-    BETA = args.beta if args.beta else 1
+    MAX_PRODUCERS = args.max_producers if args.max_producers is not None else 10
+    MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
+    EPSILON = args.epsilon if args.epsilon is not None else 1
+    FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
+    MAX_RULES = args.max_rules if args.max_rules is not None else 5
+    MAX_CONDITIONS = args.max_conditions is not None if args.max_conditions else 5
+    ALPHA = args.alpha if args.alpha is not None else 1
+    BETA = args.beta if args.beta is not None else 1
 
     main(FILENAME)

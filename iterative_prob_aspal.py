@@ -931,13 +931,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # PARAMETERS
-    MAX_PRODUCERS = args.max_producers if args.max_producers else 10
-    MAX_CONSUMERS = args.max_consumers if args.max_consumers else 10
-    WINDOW = args.window if args.window else 5
-    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len else 20
-    EPSILON = args.epsilon if args.epsilon else 1
-    FILENAME = args.filename if args.filename else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules else 5
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 3
+    MAX_PRODUCERS = args.max_producers if args.max_producers is not None else 10
+    MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
+    WINDOW = args.window if args.window is not None else 5
+    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len is not None else 20
+    EPSILON = args.epsilon if args.epsilon is not None else 1
+    FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
+    MAX_RULES = args.max_rules if args.max_rules is not None else 5
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 3
 
     main(FILENAME)

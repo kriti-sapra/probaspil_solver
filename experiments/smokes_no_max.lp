@@ -3,9 +3,9 @@ person(bob).
 person(carl).
 
 modeh(smoke(+person)).
-modeb(stress(+person)).
-modeb(influences(-person, +person)).
-modeb(smoke(+person)).
+modeb(stress(+person), [(max, 2)]).
+modeb(influences(-person, +person), [(max, 2)]).
+modeb(smoke(+person), [(max, 2)]).
 
 pf(stress(ann), 0.8).
 pf(influences(ann, bob), 0.6).

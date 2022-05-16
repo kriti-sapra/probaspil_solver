@@ -9,7 +9,7 @@ import clingo
 from itertools import chain, combinations
 import argparse
 
-DEFAULT_FILE = 'experiments/smokes.lp'
+DEFAULT_FILE = 'experiments/smokes_no_max.lp'
 # BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
 BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
@@ -938,6 +938,6 @@ if __name__ == "__main__":
     EPSILON = args.epsilon if args.epsilon else 1
     FILENAME = args.filename if args.filename else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules else 5
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 5
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions else 3
 
     main(FILENAME)

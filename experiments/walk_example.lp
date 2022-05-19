@@ -1,5 +1,5 @@
-wind.
 sun.
+rain.
 run :- sun, not wind, not walk.
 walk :- sun, not rain, not run.
 

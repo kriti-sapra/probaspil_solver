@@ -1,7 +1,7 @@
 Experiment 1 Prob ASPAL\n
 Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -23,39 +23,292 @@ Score: 0.46
 Hypothesis: 
 smoke(A):-  person(A).
 
-Score: 0.79
+Score: 0.67
 
 ----Solution 3----
 
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-Score: 0.69
+Score: 0.44
 
 ----Solution 4----
 
 Hypothesis: 
 smoke(A):-  person(A), smoke(A).
 
-Score: 0.96
+Score: 0.71
 
 ----Solution 5----
 
 Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.83
+
+----Solution 6----
+
+Hypothesis: 
 smoke(A):-  person(A), influences(B,A), person(B).
 
+Score: 0.59
+
+----Solution 7----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.83
+
+----Solution 8----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.67
+
+----Solution 9----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.83
+
+----Solution 10----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.96
+
+----Solution 11----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 12----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 13----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.96
+
+----Solution 14----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.96
+
+----Solution 15----
+
+Hypothesis: 
+smoke(A):-  person(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.92
+
+----Solution 16----
+
+Hypothesis: 
+smoke(A):-  person(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.92
+
+----Solution 17----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 18----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.69
+
+----Solution 19----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.82
+
+----Solution 20----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.57
+
+----Solution 21----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.82
+
+----Solution 22----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.66
+
+----Solution 23----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.82
+
+----Solution 24----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 25----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 26----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.62
+
+----Solution 27----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 28----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.78
+
+----Solution 29----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
 Score: 0.84
+
+----Solution 30----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.92
+
+----Solution 31----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 32----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.97
+
+----Solution 33----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 34----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.97
+
+----Solution 35----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.97
 
 ----Best Solution----
 
 Hypothesis: 
-Empty Hypothesis
-Score: 0.46
-Found Solution in 0.1744 seconds
+smoke(A):-  person(A), stress(A).
+
+Score: 0.44
+Found Solution in 1.1096 seconds
 Experiment 2 Early Stop Prob ASPAL\n
 Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -69,14 +322,16 @@ Invoking
 ----Best Solution----
 
 Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
 smoke(A):-  person(A), stress(A).
 
-Score: 0.81
-Found Solution in 0.1751 seconds
+Score: 1.00
+Found Solution in 1.1280 seconds
 Experiment 3 Prob ASPAL with multiple answer sets\n
 Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -98,39 +353,292 @@ Score: 0.46
 Hypothesis: 
 smoke(A):-  person(A).
 
-Score: 0.79
+Score: 0.67
 
 ----Solution 3----
 
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-Score: 0.69
+Score: 0.44
 
 ----Solution 4----
 
 Hypothesis: 
 smoke(A):-  person(A), smoke(A).
 
-Score: 0.96
+Score: 0.71
 
 ----Solution 5----
 
 Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.83
+
+----Solution 6----
+
+Hypothesis: 
 smoke(A):-  person(A), influences(B,A), person(B).
 
+Score: 0.59
+
+----Solution 7----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.83
+
+----Solution 8----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.67
+
+----Solution 9----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.83
+
+----Solution 10----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.96
+
+----Solution 11----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 12----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 13----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.96
+
+----Solution 14----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.96
+
+----Solution 15----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 16----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 17----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 18----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.69
+
+----Solution 19----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.82
+
+----Solution 20----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.57
+
+----Solution 21----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.82
+
+----Solution 22----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.66
+
+----Solution 23----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.82
+
+----Solution 24----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 25----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.94
+
+----Solution 26----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.62
+
+----Solution 27----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 28----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.78
+
+----Solution 29----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A).
+
 Score: 0.84
+
+----Solution 30----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.92
+
+----Solution 31----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 32----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 33----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 34----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 35----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
 
 ----Best Solution----
 
 Hypothesis: 
-Empty Hypothesis
-Score: 0.46
-Found Solution in 0.1763 seconds
+smoke(A):-  person(A), stress(A).
+
+Score: 0.44
+Found Solution in 1.1208 seconds
 Experiment 4 Early Stop Prob ASPAL with multiple answer sets\n
 Executing ASPAL on file experiments/smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -146,12 +654,14 @@ Invoking
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-Score: 0.81
-Found Solution in 0.1720 seconds
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 1.1035 seconds
 Experiment 5 Prob ASPAL with credal\n
 Executing ASPAL on file experiments/credal_smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -175,14 +685,56 @@ EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': 
 ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
-SCORE: 0.7913333333333334
+SCORE: 0.6663333333333334
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
-SCORE: 0.6920000000000001
+SCORE: 0.44200000000000006
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.7086666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8336666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.5913333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8336666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 0.6736666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8336666666666667
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
@@ -196,7 +748,196 @@ EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': 
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
-SCORE: 1.2086666666666668
+SCORE: 0.9586666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8336666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9586666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9586666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 0.9163333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 0.9163333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.0413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 0.9163333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.0413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.0413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.0413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.1663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.1663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.0413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.1663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 1.1663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.6920000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8170000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.5746666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8170000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 0.657
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.8170000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9420000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9420000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+SCORE: 0.625
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9420000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 0.782
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.0836666666666668
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
@@ -204,6 +945,69 @@ ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
 SCORE: 0.8413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.0836666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 0.9236666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.0836666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.0836666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.9663333333333334
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
@@ -231,14 +1035,14 @@ EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': 
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
-SCORE: 1.4586666666666668
+SCORE: 1.3336666666666668
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
-SCORE: 1.4586666666666668
+SCORE: 1.3336666666666668
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
@@ -252,7 +1056,259 @@ EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': 
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.9663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.9663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.9663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 1.0913333333333335
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 1.0913333333333335
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.9663333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 1.0913333333333335
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 1.0913333333333335
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.0486666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.0486666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.1736666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.1736666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0.096, 0.096]}
+SCORE: 1.0166666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.1736666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.1736666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.3336666666666668
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
 ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
 EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
@@ -272,39 +1328,292 @@ Score: 0.46
 Hypothesis: 
 smoke(A):-  person(A).
 
-Score: 0.79
+Score: 0.67
 
 ----Solution 3----
 
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-Score: 0.69
+Score: 0.44
 
 ----Solution 4----
 
 Hypothesis: 
 smoke(A):-  person(A), smoke(A).
 
-Score: 0.96
+Score: 0.71
 
 ----Solution 5----
 
 Hypothesis: 
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.83
+
+----Solution 6----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.59
+
+----Solution 7----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+Score: 0.83
+
+----Solution 8----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.67
+
+----Solution 9----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+Score: 0.83
+
+----Solution 10----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.96
+
+----Solution 11----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+Score: 0.96
+
+----Solution 12----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 0.83
+
+----Solution 13----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.96
+
+----Solution 14----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+Score: 0.96
+
+----Solution 15----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 16----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 17----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A).
+
+Score: 0.92
+
+----Solution 18----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.69
+
+----Solution 19----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.82
+
+----Solution 20----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.57
+
+----Solution 21----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.82
+
+----Solution 22----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.66
+
+----Solution 23----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.82
+
+----Solution 24----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(A).
+
+Score: 0.94
+
+----Solution 25----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.94
+
+----Solution 26----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.62
+
+----Solution 27----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(A).
+
+Score: 0.94
+
+----Solution 28----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B), stress(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 0.78
+
+----Solution 29----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
 smoke(A):-  person(A), influences(B,A), person(B).
 
 Score: 0.84
 
+----Solution 30----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.92
+
+----Solution 31----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), smoke(A), stress(A).
+
+Score: 0.97
+
+----Solution 32----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 33----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+smoke(A):-  person(A), influences(B,A), person(B), stress(B).
+
+Score: 0.97
+
+----Solution 34----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(A).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
+----Solution 35----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.97
+
 ----Best Solution----
 
 Hypothesis: 
-Empty Hypothesis
-Score: 0.46
-Found Solution in 0.1769 seconds
+smoke(A):-  person(A), stress(A).
+
+Score: 0.44
+Found Solution in 1.1282 seconds
 Experiment 6 Early Stop Prob ASPAL with credal\n
 Executing ASPAL on file experiments/credal_smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
-Max rules: 1
+Max rules: 2
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -320,5 +1629,7 @@ Invoking
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-Score: 0.81
-Found Solution in 0.1729 seconds
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 1.1117 seconds

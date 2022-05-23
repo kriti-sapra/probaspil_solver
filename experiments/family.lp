@@ -125,35 +125,35 @@ grandmother(laura,katleen).
 % Probabilistic facts
 
 pf(father(bart,stijn), 0.7). 
-pf(father(bart,pieter), 0.9). 
-pf(father(luc,soetkin), 0.6). 
-pf(father(willem,lieve), 0.7). 
-pf(father(willem,katleen), 0.8). 
-pf(father(rene,willem), 0.9). 
-pf(father(rene,lucy), 0.7). 
-pf(father(leon,rose), 0.8). 
-pf(father(etienne,luc), 0.8). 
-pf(father(etienne,an), 0.9). 
-pf(father(prudent,esther), 0.7).
+%pf(father(bart,pieter), 0.9). 
+%pf(father(luc,soetkin), 0.6). 
+%pf(father(willem,lieve), 0.7). 
+%pf(father(willem,katleen), 0.8). 
+%pf(father(rene,willem), 0.9). 
+%pf(father(rene,lucy), 0.7). 
+%pf(father(leon,rose), 0.8). 
+%pf(father(etienne,luc), 0.8). 
+%pf(father(etienne,an), 0.9). 
+%pf(father(prudent,esther), 0.7).
 
 % Mode Bias
 modeh(parent(+person, +person)).
-modeb(father(+person, -person), [(max, 1)]).
-modeb(mother(+person, -person), [(max, 1)]).
+modeb(father(+person, +person), [(max, 1)]).
+modeb(mother(+person, +person), [(max, 1)]).
 
 % Examples
 
 example(parent(bart,stijn), 0.7).
-example(parent(bart,pieter), 0.9).
-example(parent(luc,soetkin), 0.6).
-example(parent(willem,lieve), 0.7).
-example(parent(willem,katleen), 0.8).
-example(parent(rene,willem), 0.9).
-example(parent(rene,lucy), 0.7).
-example(parent(leon,rose), 0.8).
-example(parent(etienne,luc), 0.8).
-example(parent(etienne,an), 0.9).
-example(parent(prudent,esther), 0.7).
+%example(parent(bart,pieter), 0.9).
+%example(parent(luc,soetkin), 0.6).
+%example(parent(willem,lieve), 0.7).
+%example(parent(willem,katleen), 0.8).
+%example(parent(rene,willem), 0.9).
+%example(parent(rene,lucy), 0.7).
+%example(parent(leon,rose), 0.8).
+%example(parent(etienne,luc), 0.8).
+%example(parent(etienne,an), 0.9).
+%example(parent(prudent,esther), 0.7).
 
 example(parent(katleen,stijn), 1).
 example(parent(katleen,pieter), 1).

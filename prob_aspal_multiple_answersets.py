@@ -10,8 +10,8 @@ from itertools import chain, combinations
 import argparse
 
 DEFAULT_FILE = 'experiments/walk_answer_set.lp'
-BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-#BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
+#BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''

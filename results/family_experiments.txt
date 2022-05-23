@@ -1,0 +1,13 @@
+Experiment 3 Prob ASPAL with ProbLog\n
+Executing ASPAL on file experiments/family.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed file. Now starting the solver
+Invoking 

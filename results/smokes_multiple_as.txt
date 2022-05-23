@@ -1,0 +1,23 @@
+Experiment 6 Early Stop Prob ASPAL with credal\n
+Executing ASPAL on file experiments/credal_smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_credal_smokes.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 6.5416 seconds

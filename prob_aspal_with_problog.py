@@ -926,7 +926,7 @@ def execute(file_contents, rule_weights, modedecs, prob_facts, examples, loss_fu
         logging.debug("HYpothesis: {}, Score: {}".format(h, score))
 
     # Return all the solutions, the best solutions and the best score
-    print("Problog called {} times.".format(runs))
+    # print("Problog called {} times.".format(runs))
     return solutions, bestsolution, bestscore
 
 

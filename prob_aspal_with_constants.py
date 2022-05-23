@@ -10,8 +10,8 @@ from itertools import chain, combinations
 import argparse
 
 DEFAULT_FILE = 'experiments/walk_answer_set.lp'
-#BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+#BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''
@@ -766,7 +766,7 @@ def get_models(control):
 def check_models_for_examples(actual, models, tc_probability):
     for m in models:
         model = str(m)
-        print("Model: {}".format(model))
+        # print("Model: {}".format(model))
         for e in actual:
             if e in model:
                 actual[e] += tc_probability
@@ -903,9 +903,6 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=pr
             # Change the set to a frozen set and add it to a dictionary with it's score
             solutions[frozenset(currentsolution)] = score
 
-            if loss == 0 and hypotheses[h] == 5:
-                print("OPTIMAL SOLUTION: {} SCORE: {}".format(currentsolution, score))
-
             # Check if the score of this hypothesis is better than the current best score
             if bestscore is None or score < bestscore:
                 bestscore = score
@@ -961,9 +958,9 @@ if __name__ == "__main__":
     MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
     EPSILON = args.epsilon if args.epsilon is not None else 1
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules is not None else 2
-    MAX_CONDITIONS = args.max_conditions is not None if args.max_conditions else 3
-    ALPHA = args.alpha if args.alpha is not None else 0.1
+    MAX_RULES = args.max_rules if args.max_rules is not None else 5
+    MAX_CONDITIONS = args.max_conditions is not None if args.max_conditions else 5
+    ALPHA = args.alpha if args.alpha is not None else 1
     BETA = args.beta if args.beta is not None else 1
 
     main(FILENAME)

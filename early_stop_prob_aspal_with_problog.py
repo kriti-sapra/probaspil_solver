@@ -912,7 +912,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
         else:
             break
     # Return all the solutions, the best solutions and the best score
-    print("Problog called {} times.".format(runs))
+    # print("Problog called {} times.".format(runs))
     return solutions, bestsolution, best_coverage
 
 

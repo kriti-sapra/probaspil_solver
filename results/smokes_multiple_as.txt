@@ -1,7 +1,310 @@
+Experiment 1 Prob ASPAL\n
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 1
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/wk_smokes.lp. Now starting the solver
+Invoking 
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+
+----Solution 2----
+
+Hypothesis: 
+smoke(A):-  person(A).
+
+Score: 0.79
+
+----Solution 3----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.69
+
+----Solution 4----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.96
+
+----Solution 5----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.84
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+Found Solution in 0.1744 seconds
+Experiment 2 Early Stop Prob ASPAL\n
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 1
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.81
+Found Solution in 0.1751 seconds
+Experiment 3 Prob ASPAL with multiple answer sets\n
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 1
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/wk_smokes.lp. Now starting the solver
+Invoking 
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+
+----Solution 2----
+
+Hypothesis: 
+smoke(A):-  person(A).
+
+Score: 0.79
+
+----Solution 3----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.69
+
+----Solution 4----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.96
+
+----Solution 5----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.84
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+Found Solution in 0.1763 seconds
+Experiment 4 Early Stop Prob ASPAL with multiple answer sets\n
+Executing ASPAL on file experiments/smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 1
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_smokes.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.81
+Found Solution in 0.1720 seconds
+Experiment 5 Prob ASPAL with credal\n
+Executing ASPAL on file experiments/credal_smokes.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 1
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Weight for length of hypothesis (alpha): 1
+Weight for loss of hypothesis (beta): 1
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/wk_credal_smokes.lp. Now starting the solver
+Invoking 
+TCS: {'': 0.06399999999999999, 'stress(ann). ': 0.25600000000000006, 'influences(ann,bob). ': 0.09599999999999997, 'influences(bob,carl). ': 0.015999999999999997, 'stress(ann). influences(ann,bob). ': 0.384, 'stress(ann). influences(bob,carl). ': 0.06400000000000002, 'influences(ann,bob). influences(bob,carl). ': 0.023999999999999994, 'stress(ann). influences(ann,bob). influences(bob,carl). ': 0.096}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.45866666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [1.0000000000000002, 1.0000000000000002], 'smoke(bob)': [1.0000000000000002, 1.0000000000000002], 'smoke(carl)': [1.0000000000000002, 1.0000000000000002]}
+SCORE: 0.7913333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0.8000000000000002, 0.8000000000000002], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.6920000000000001
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 0.9586666666666667
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.6, 0.6], 'smoke(carl)': [0.2, 0.2]}
+SCORE: 0.8413333333333334
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0.48, 0.48], 'smoke(carl)': [0, 0]}
+SCORE: 1.0486666666666666
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.2086666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+EXPECTED: {'smoke(ann)': (0.8, 0.8), 'smoke(bob)': (0.48, 0.48), 'smoke(carl)': (0.096, 0.096)}
+ACTUAL: {'smoke(ann)': [0, 0], 'smoke(bob)': [0, 0], 'smoke(carl)': [0, 0]}
+SCORE: 1.4586666666666668
+
+----Solution 1----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+
+----Solution 2----
+
+Hypothesis: 
+smoke(A):-  person(A).
+
+Score: 0.79
+
+----Solution 3----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+Score: 0.69
+
+----Solution 4----
+
+Hypothesis: 
+smoke(A):-  person(A), smoke(A).
+
+Score: 0.96
+
+----Solution 5----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B).
+
+Score: 0.84
+
+----Best Solution----
+
+Hypothesis: 
+Empty Hypothesis
+Score: 0.46
+Found Solution in 0.1769 seconds
 Experiment 6 Early Stop Prob ASPAL with credal\n
 Executing ASPAL on file experiments/credal_smokes.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
-Max rules: 5
+Max rules: 1
 Max conditions: 5
 Max producers: 10
 Max consumers: 10
@@ -17,7 +320,5 @@ Invoking
 Hypothesis: 
 smoke(A):-  person(A), stress(A).
 
-smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
-
-Score: 1.00
-Found Solution in 6.5416 seconds
+Score: 0.81
+Found Solution in 0.1729 seconds

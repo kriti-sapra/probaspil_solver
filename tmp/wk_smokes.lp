@@ -7,19 +7,19 @@ person(carl).
 
 smoke(A):-
 	person(A),
-	rule(r((idsmSx,c,l)),1).
+	rule(r((idsmhDB,c,l)),1).
 smoke(A):-
 	person(A),
 	A=D,
 	person(D),
 	stress(D),
-	rule(r((idsmSx,c,l),(idsteCC,c,l(1))),2).
+	rule(r((idsmhDB,c,l),(idstMuB,c,l(1))),2).
 smoke(A):-
 	person(A),
 	A=D,
 	person(D),
 	smoke(D),
-	rule(r((idsmSx,c,l),(idsmYh,c,l(1))),2).
+	rule(r((idsmhDB,c,l),(idsm41,c,l(1))),2).
 smoke(A):-
 	person(A),
 	A=D,
@@ -28,14 +28,14 @@ smoke(A):-
 	A=E,
 	person(E),
 	stress(E),
-	rule(r((idsmSx,c,l),(idsmYh,c,l(1)),(idsteCC,c,l(1))),3).
+	rule(r((idsmhDB,c,l),(idsm41,c,l(1)),(idstMuB,c,l(1))),3).
 smoke(A):-
 	person(A),
 	A=C,
 	person(B),
 	person(C),
 	influences(B,C),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1))),2).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1))),2).
 smoke(A):-
 	person(A),
 	A=C,
@@ -45,7 +45,7 @@ smoke(A):-
 	A=D,
 	person(D),
 	stress(D),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsteCC,c,l(1))),3).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idstMuB,c,l(1))),3).
 smoke(A):-
 	person(A),
 	A=C,
@@ -55,7 +55,7 @@ smoke(A):-
 	B=D,
 	person(D),
 	stress(D),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsteCC,c,l(2))),3).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idstMuB,c,l(2))),3).
 smoke(A):-
 	person(A),
 	A=C,
@@ -65,7 +65,7 @@ smoke(A):-
 	A=D,
 	person(D),
 	smoke(D),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(1))),3).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(1))),3).
 smoke(A):-
 	person(A),
 	A=C,
@@ -78,7 +78,7 @@ smoke(A):-
 	A=E,
 	person(E),
 	stress(E),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(1)),(idsteCC,c,l(1))),4).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(1)),(idstMuB,c,l(1))),4).
 smoke(A):-
 	person(A),
 	A=C,
@@ -91,7 +91,7 @@ smoke(A):-
 	B=E,
 	person(E),
 	stress(E),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(1)),(idsteCC,c,l(2))),4).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(1)),(idstMuB,c,l(2))),4).
 smoke(A):-
 	person(A),
 	A=C,
@@ -101,7 +101,7 @@ smoke(A):-
 	B=D,
 	person(D),
 	smoke(D),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(2))),3).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(2))),3).
 smoke(A):-
 	person(A),
 	A=C,
@@ -114,7 +114,7 @@ smoke(A):-
 	A=E,
 	person(E),
 	stress(E),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(2)),(idsteCC,c,l(1))),4).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(2)),(idstMuB,c,l(1))),4).
 smoke(A):-
 	person(A),
 	A=C,
@@ -127,4 +127,4 @@ smoke(A):-
 	B=E,
 	person(E),
 	stress(E),
-	rule(r((idsmSx,c,l),(idinbNC,c,l(1)),(idsmYh,c,l(2)),(idsteCC,c,l(2))),4).
+	rule(r((idsmhDB,c,l),(idinQe,c,l(1)),(idsm41,c,l(2)),(idstMuB,c,l(2))),4).

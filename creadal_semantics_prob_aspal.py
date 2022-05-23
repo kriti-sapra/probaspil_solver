@@ -9,7 +9,7 @@ import clingo
 from itertools import chain, combinations
 import argparse
 
-DEFAULT_FILE = 'experiments/credal_sick.lp'
+DEFAULT_FILE = 'experiments/credal_walk_example.lp'
 BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
 # BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
@@ -956,7 +956,7 @@ if __name__ == "__main__":
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules is not None else 2
     MAX_CONDITIONS = args.max_conditions is not None if args.max_conditions else 2
-    ALPHA = args.alpha if args.alpha is not None else 0
+    ALPHA = args.alpha if args.alpha is not None else 0.25
     BETA = args.beta if args.beta is not None else 1
 
     main(FILENAME)

@@ -156,13 +156,13 @@ example(parent(bart,stijn), 0.7).
 %example(parent(prudent,esther), 0.7).
 
 example(parent(katleen,stijn), 1).
-example(parent(katleen,pieter), 1).
-example(parent(lieve,soetkin), 1).
-example(parent(esther,lieve), 1).
-example(parent(esther,katleen), 1).
-example(parent(yvonne,willem), 1).
-example(parent(yvonne,lucy), 1).
-example(parent(alice,rose), 1).
-example(parent(rose,luc), 1).
-example(parent(rose,an), 1).
-example(parent(laura,esther), 1).
+%example(parent(katleen,pieter), 1).
+%example(parent(lieve,soetkin), 1).
+%example(parent(esther,lieve), 1).
+%example(parent(esther,katleen), 1).
+%example(parent(yvonne,willem), 1).
+%example(parent(yvonne,lucy), 1).
+%example(parent(alice,rose), 1).
+%example(parent(rose,luc), 1).
+%example(parent(rose,an), 1).
+%example(parent(laura,esther), 1).

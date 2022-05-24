@@ -10,8 +10,8 @@ from itertools import chain, combinations
 import argparse
 
 DEFAULT_FILE = 'experiments/family.lp'
-#BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+#BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''
@@ -857,10 +857,11 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
 
         # Calculate loss and score of the hypothesis
         coverage = loss_func(expected=examples, actual=prob_examples_h)
-
+        # logging.debug("Hypothesis: {} Score: {}".format(h, coverage))
         # If the coverage of the same length hypothesis is better then update best solutions accordingly
         if best_coverage < coverage:
             # Reset current solution to avoid duplicates and contamination
+
             currentsolution = set()
             # Get individual rule abducibles from the hypothesis
             rule_abs = h.split(".")

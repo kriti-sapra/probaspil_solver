@@ -125,7 +125,7 @@ grandmother(laura,katleen).
 % Probabilistic facts
 
 pf(father(bart,stijn), 0.7). 
-%pf(father(bart,pieter), 0.9). 
+pf(father(bart,pieter), 0.9).
 %pf(father(luc,soetkin), 0.6). 
 %pf(father(willem,lieve), 0.7). 
 %pf(father(willem,katleen), 0.8). 

@@ -844,7 +844,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_
     logging.debug("Starting to make total choices.")
     total_choices = get_total_choices_with_probs(prob_facts)
     logging.debug("Total choices made.")
-    print("TCS: {}".format(total_choices))
+    # print("TCS: {}".format(total_choices))
 
     for h in hypotheses:
         # Examples you are trying to reach
@@ -876,10 +876,10 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_
         loss = loss_func(expected=examples, actual=prob_examples_h)
 
         score = alt_h_score(h_len=hypotheses[h], h_loss=loss, a=alpha)
-        for e in examples:
-            print("EXPECTED: {}".format(examples))
-            print("ACTUAL: {}".format(prob_examples_h))
-        print("SCORE: {}".format(score))
+        # for e in examples:
+        #     print("EXPECTED: {}".format(examples))
+        #     print("ACTUAL: {}".format(prob_examples_h))
+        # print("SCORE: {}".format(score))
         # Check if hypothesis is a solution and if you have to update best solution
         if score < EPSILON:
             # Reset current solution to avoid duplicates and contamination

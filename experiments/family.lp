@@ -144,7 +144,7 @@ modeb(mother(+person, +person), [(max, 1)]).
 % Examples
 
 example(parent(bart,stijn), 0.7).
-%example(parent(bart,pieter), 0.9).
+example(parent(bart,pieter), 0.9).
 %example(parent(luc,soetkin), 0.6).
 %example(parent(willem,lieve), 0.7).
 %example(parent(willem,katleen), 0.8).
@@ -156,7 +156,7 @@ example(parent(bart,stijn), 0.7).
 %example(parent(prudent,esther), 0.7).
 
 example(parent(katleen,stijn), 1).
-%example(parent(katleen,pieter), 1).
+example(parent(katleen,pieter), 1).
 %example(parent(lieve,soetkin), 1).
 %example(parent(esther,lieve), 1).
 %example(parent(esther,katleen), 1).

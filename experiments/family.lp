@@ -127,7 +127,7 @@ grandmother(laura,katleen).
 pf(father(bart,stijn), 0.7). 
 pf(father(bart,pieter), 0.9).
 pf(father(luc,soetkin), 0.6).
-%pf(father(willem,lieve), 0.7). 
+pf(father(willem,lieve), 0.7).
 %pf(father(willem,katleen), 0.8). 
 %pf(father(rene,willem), 0.9). 
 %pf(father(rene,lucy), 0.7). 
@@ -146,7 +146,7 @@ modeb(mother(+person, +person), [(max, 1)]).
 example(parent(bart,stijn), 0.7).
 example(parent(bart,pieter), 0.9).
 example(parent(luc,soetkin), 0.6).
-%example(parent(willem,lieve), 0.7).
+example(parent(willem,lieve), 0.7).
 %example(parent(willem,katleen), 0.8).
 %example(parent(rene,willem), 0.9).
 %example(parent(rene,lucy), 0.7).
@@ -158,7 +158,7 @@ example(parent(luc,soetkin), 0.6).
 example(parent(katleen,stijn), 1).
 example(parent(katleen,pieter), 1).
 example(parent(lieve,soetkin), 1).
-%example(parent(esther,lieve), 1).
+example(parent(esther,lieve), 1).
 %example(parent(esther,katleen), 1).
 %example(parent(yvonne,willem), 1).
 %example(parent(yvonne,lucy), 1).

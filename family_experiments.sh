@@ -7,7 +7,7 @@ conda activate potassco
 echo "Experiment 1 Prob ASPAL\n" > results/family_experiments.txt
 echo "Experiment 1 Prob ASPAL\n"
 
-python prob_aspal_with_constants.py -f experiments/family.lp  >> results/family_experiments.txt
+#python prob_aspal_with_constants.py -f experiments/family.lp  >> results/family_experiments.txt
 
 echo "Experiment 2 Early Stop Prob ASPAL\n" >> results/family_experiments.txt
 echo "Experiment 2 Early Stop Prob ASPAL\n"

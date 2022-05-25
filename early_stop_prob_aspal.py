@@ -828,12 +828,13 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
     logging.debug("Total choices made.")
 
     # Traverse hypotheses with shortest first
+    total_traversals = 0
     for (h, n) in filtered_h:
         # logging.debug("H: {}, LENGTH: {}".format(h, n))
         # Examples you are trying to reach
         prob_examples_h = {e: 0 for e in examples}
         # logging.debug("Hypothesis: {}".format(h))
-
+        total_traversals += 1
         for tc in total_choices:
             logging.debug("Hypothesis: {}, TC: {}".format(h, tc))
             # Create a Control object that will unify models against the appropriate
@@ -892,6 +893,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
         else:
             break
 
+    print("Total Traversals: {}".format(total_traversals))
     # Return all the solutions, the best solutions and the best score
     return solutions, bestsolution, best_coverage
 

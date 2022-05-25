@@ -15,7 +15,7 @@ import argparse
 
 DEFAULT_FILE = 'experiments/smokes.lp'
 # BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
+BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 ERROR_LOG_FILE = BASE_PATH + '/tmp/problog.log'
@@ -840,8 +840,6 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
     logging.debug("Starting to make total choices.")
     logging.debug("Total choices made.")
 
-    total_time_runs = 0
-
     # Traverse hypotheses with shortest first
     runs = 0
     for (h, n) in filtered_h:
@@ -867,12 +865,9 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
         # Open the base file and append it to the model
         model += file_contents
         # print("Model: {}".format(model))
-        start = time.perf_counter()
         result = get_evaluatable().create_from(PrologString(model)).evaluate()
-        end = time.perf_counter()
 
         # print("RUN TIME TAKEN: {:0.3f}".format(end - start))
-        total_time_runs += (end - start)
 
         prob_examples_h = {str(r): result[r] for r in result}
 
@@ -912,7 +907,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
         else:
             break
     # Return all the solutions, the best solutions and the best score
-    # print("Problog called {} times.".format(runs))
+    print("Problog called {} times.".format(runs))
     return solutions, bestsolution, best_coverage
 
 

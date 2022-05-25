@@ -18,7 +18,7 @@ python early_stop_prob_aspal_with_problog.py -f experiments/family.lp  >> result
 echo "Experiment 3 Prob ASPAL\n" >> results/family_experiments.txt
 echo "Experiment 3 Prob ASPAL\n"
 
-#python prob_aspal_with_constants.py -f experiments/family.lp -e 0.5 >> results/family_experiments.txt
+python prob_aspal_with_constants.py -f experiments/family.lp -e 0.5 >> results/family_experiments.txt
 
 #echo "Experiment 4 Prob ASPAL with ProbLog\n" >> results/family_experiments.txt
 #echo "Experiment 4 Prob ASPAL with ProbLog\n"

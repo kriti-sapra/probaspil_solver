@@ -1,1 +1,46 @@
+Experiment 1 Early Stop Prob ASPAL\n
+Executing ASPAL on file experiments/family.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/wk_family.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 1.00
+Found Solution in 728.9891 seconds
+Experiment 2 EArly Stop Prob ASPAL with ProbLog\n
+Executing ASPAL on file experiments/family.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+
+----Best Solution----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 1.00
+Found Solution in 782.6088 seconds
 Experiment 3 Prob ASPAL\n

@@ -20,7 +20,7 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 1.00
-Found Solution in 728.9891 seconds
+Found Solution in 723.4025 seconds
 Experiment 2 EArly Stop Prob ASPAL with ProbLog\n
 Executing ASPAL on file experiments/family.lp using solver.
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
@@ -42,5 +42,5 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 1.00
-Found Solution in 782.6088 seconds
+Found Solution in 743.4909 seconds
 Experiment 3 Prob ASPAL\n

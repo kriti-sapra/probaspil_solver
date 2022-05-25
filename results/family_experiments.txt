@@ -1,4 +1,4 @@
-Experiment 1 Prob ASPAL\n
+Experiment 3 Prob ASPAL\n
 Executing ASPAL on file experiments/family.lp using solver .
 Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
 Max rules: 5
@@ -22,65 +22,58 @@ Score: 0.20
 ----Solution 2----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-Score: 0.50
-
-----Solution 3----
-
-Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.34
+Score: 0.33
 
-----Solution 4----
+----Solution 3----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.34
+Score: 0.33
 
-----Solution 5----
+----Solution 4----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.34
+Score: 0.33
+
+----Solution 5----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), mother(B,B).
+
+parent(A,B):-  person(A), person(B).
+
+Score: 0.33
 
 ----Solution 6----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.34
+Score: 0.33
 
 ----Solution 7----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
-
-Score: 0.34
-
-----Solution 8----
-
-Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,A), mother(A,A).
-
-parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 9----
+----Solution 8----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,A), mother(A,B).
@@ -89,7 +82,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 10----
+----Solution 9----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,A), mother(B,A).
@@ -98,7 +91,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 11----
+----Solution 10----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,A), mother(B,B).
@@ -107,25 +100,25 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 12----
+----Solution 11----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.34
+Score: 0.33
 
-----Solution 13----
+----Solution 12----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
-
 parent(A,B):-  person(A), person(B), father(A,B), mother(A,A).
+
+parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 14----
+----Solution 13----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,B), mother(A,B).
@@ -134,7 +127,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 15----
+----Solution 14----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,B), mother(B,A).
@@ -143,28 +136,37 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 16----
+----Solution 15----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
-
 parent(A,B):-  person(A), person(B), father(A,B), mother(B,B).
+
+parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 17----
+----Solution 16----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.34
+Score: 0.33
+
+----Solution 17----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B).
+
+parent(A,B):-  person(A), person(B), father(B,A), mother(A,A).
+
+Score: 0.40
 
 ----Solution 18----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A), mother(A,A).
+parent(A,B):-  person(A), person(B), father(B,A), mother(A,B).
 
 parent(A,B):-  person(A), person(B).
 
@@ -173,22 +175,13 @@ Score: 0.40
 ----Solution 19----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
-
-parent(A,B):-  person(A), person(B), father(B,A), mother(A,B).
-
-Score: 0.40
-
-----Solution 20----
-
-Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,A), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 21----
+----Solution 20----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,A), mother(B,B).
@@ -197,16 +190,16 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 22----
+----Solution 21----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.34
+Score: 0.33
 
-----Solution 23----
+----Solution 22----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B), mother(A,A).
@@ -215,7 +208,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 24----
+----Solution 23----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B).
@@ -224,7 +217,7 @@ parent(A,B):-  person(A), person(B), father(B,B), mother(A,B).
 
 Score: 0.40
 
-----Solution 25----
+----Solution 24----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B), mother(B,A).
@@ -233,7 +226,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 26----
+----Solution 25----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B), mother(B,B).
@@ -242,7 +235,7 @@ parent(A,B):-  person(A), person(B).
 
 Score: 0.40
 
-----Solution 27----
+----Solution 26----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
@@ -251,18 +244,18 @@ parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.27
 
-----Solution 28----
+----Solution 27----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,A).
-
 parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), mother(A,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
 
-----Solution 29----
+----Solution 28----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,A).
@@ -271,7 +264,18 @@ parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
+
+----Solution 29----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), mother(A,A).
+
+parent(A,B):-  person(A), person(B), mother(B,B).
+
+parent(A,B):-  person(A), person(B).
+
+Score: 0.46
 
 ----Solution 30----
 
@@ -280,9 +284,9 @@ parent(A,B):-  person(A), person(B), mother(A,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 31----
 
@@ -291,33 +295,22 @@ parent(A,B):-  person(A), person(B), mother(A,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 32----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,A).
-
-parent(A,B):-  person(A), person(B).
-
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
-
-----Solution 33----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,A).
-
 parent(A,B):-  person(A), person(B), father(B,A).
 
+parent(A,B):-  person(A), person(B), mother(A,A).
+
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
 
-----Solution 34----
+----Solution 33----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,A).
@@ -326,9 +319,9 @@ parent(A,B):-  person(A), person(B), father(B,B).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
 
-----Solution 35----
+----Solution 34----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
@@ -337,7 +330,18 @@ parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
+
+----Solution 35----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), mother(B,B).
+
+parent(A,B):-  person(A), person(B).
+
+Score: 0.46
 
 ----Solution 36----
 
@@ -346,9 +350,9 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 37----
 
@@ -357,42 +361,42 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 38----
 
 Hypothesis: 
+parent(A,B):-  person(A), person(B), father(B,A).
+
 parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
+Score: 0.46
 
 ----Solution 39----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
+parent(A,B):-  person(A), person(B), father(B,B).
+
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(B,A).
-
-Score: 0.47
+Score: 0.46
 
 ----Solution 40----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,B).
+parent(A,B):-  person(A), person(B), mother(B,B).
 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 41----
 
@@ -401,9 +405,9 @@ parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 42----
 
@@ -412,157 +416,157 @@ parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 43----
 
 Hypothesis: 
+parent(A,B):-  person(A), person(B), father(B,A).
+
 parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
+Score: 0.46
 
 ----Solution 44----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A).
-
 parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+parent(A,B):-  person(A), person(B), father(B,B).
+
+Score: 0.46
 
 ----Solution 45----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,B).
-
-parent(A,B):-  person(A), person(B), mother(B,A).
+parent(A,B):-  person(A), person(B), mother(B,B).
 
 parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+parent(A,B):-  person(A), person(B), father(A,A).
+
+Score: 0.46
 
 ----Solution 46----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
-
 parent(A,B):-  person(A), person(B), mother(B,B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
+parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 0.46
 
 ----Solution 47----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
+parent(A,B):-  person(A), person(B), father(B,A).
 
 parent(A,B):-  person(A), person(B), mother(B,B).
 
-parent(A,B):-  person(A), person(B), father(A,B).
+parent(A,B):-  person(A), person(B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 48----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A).
+parent(A,B):-  person(A), person(B), mother(B,B).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(B,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 49----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,B).
-
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+parent(A,B):-  person(A), person(B), father(A,A).
+
+Score: 0.46
 
 ----Solution 50----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B).
+parent(A,B):-  person(A), person(B), father(B,A).
 
-parent(A,B):-  person(A), person(B), father(A,B).
+parent(A,B):-  person(A), person(B).
 
 parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 51----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A).
+parent(A,B):-  person(A), person(B), father(B,B).
 
 parent(A,B):-  person(A), person(B).
 
 parent(A,B):-  person(A), person(B), father(A,A).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 52----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,B).
+parent(A,B):-  person(A), person(B), father(B,A).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 53----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A).
+parent(A,B):-  person(A), person(B), father(B,B).
 
 parent(A,B):-  person(A), person(B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.46
 
 ----Solution 54----
 
 Hypothesis: 
+parent(A,B):-  person(A), person(B), father(B,A).
+
 parent(A,B):-  person(A), person(B), father(B,B).
 
 parent(A,B):-  person(A), person(B).
 
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
+Score: 0.46
 
 ----Solution 55----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,B).
+parent(A,B):-  person(A), person(B), mother(A,A).
 
-parent(A,B):-  person(A), person(B), father(B,A).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
-parent(A,B):-  person(A), person(B).
+parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.40
 
 ----Solution 56----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,A).
+parent(A,B):-  person(A), person(B), mother(B,A).
 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
@@ -573,9 +577,9 @@ Score: 0.40
 ----Solution 57----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), mother(B,B).
 
-parent(A,B):-  person(A), person(B), mother(B,A).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
@@ -586,9 +590,9 @@ Score: 0.40
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
-parent(A,B):-  person(A), person(B), mother(B,B).
-
 parent(A,B):-  person(A), person(B), father(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,A).
 
 Score: 0.40
 
@@ -599,22 +603,11 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
-parent(A,B):-  person(A), person(B), father(A,A).
-
-Score: 0.40
-
-----Solution 60----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-parent(A,B):-  person(A), person(B), father(A,B).
-
 parent(A,B):-  person(A), person(B), father(A,A), mother(A,A).
 
 Score: 0.47
 
-----Solution 61----
+----Solution 60----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,A), mother(A,B).
@@ -625,12 +618,23 @@ parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.47
 
+----Solution 61----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), father(A,A), mother(B,A).
+
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 0.47
+
 ----Solution 62----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), father(A,A), mother(B,B).
 
-parent(A,B):-  person(A), person(B), father(A,A), mother(B,A).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
@@ -639,26 +643,15 @@ Score: 0.47
 ----Solution 63----
 
 Hypothesis: 
+parent(A,B):-  person(A), person(B), father(A,B), mother(A,A).
+
 parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
-
-parent(A,B):-  person(A), person(B), father(A,A), mother(B,B).
 
 Score: 0.47
 
 ----Solution 64----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-parent(A,B):-  person(A), person(B), father(A,B), mother(A,A).
-
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
-
-----Solution 65----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(A,B), mother(A,B).
@@ -669,12 +662,23 @@ parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.47
 
+----Solution 65----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), father(A,B), mother(B,A).
+
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 0.47
+
 ----Solution 66----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), father(A,B), mother(B,B).
 
-parent(A,B):-  person(A), person(B), father(A,B), mother(B,A).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
@@ -683,13 +687,13 @@ Score: 0.47
 ----Solution 67----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), father(B,A).
 
-parent(A,B):-  person(A), person(B), father(A,B), mother(B,B).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
-Score: 0.47
+Score: 0.40
 
 ----Solution 68----
 
@@ -698,14 +702,14 @@ parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
-parent(A,B):-  person(A), person(B), father(B,A).
+parent(A,B):-  person(A), person(B), father(B,A), mother(A,A).
 
-Score: 0.40
+Score: 0.47
 
 ----Solution 69----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), father(B,A), mother(A,A).
+parent(A,B):-  person(A), person(B), father(B,A), mother(A,B).
 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
@@ -716,37 +720,26 @@ Score: 0.47
 ----Solution 70----
 
 Hypothesis: 
+parent(A,B):-  person(A), person(B), father(B,A), mother(B,A).
+
 parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
-
-parent(A,B):-  person(A), person(B), father(B,A), mother(A,B).
 
 Score: 0.47
 
 ----Solution 71----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
+parent(A,B):-  person(A), person(B), father(B,A), mother(B,B).
 
-parent(A,B):-  person(A), person(B), father(B,A), mother(B,A).
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.47
 
 ----Solution 72----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-parent(A,B):-  person(A), person(B), father(B,A), mother(B,B).
-
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
-
-----Solution 73----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B).
@@ -757,29 +750,29 @@ parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.40
 
+----Solution 73----
+
+Hypothesis: 
+parent(A,B):-  person(A), person(B), father(B,B), mother(A,A).
+
+parent(A,B):-  person(A), person(B), mother(A,B).
+
+parent(A,B):-  person(A), person(B), father(A,B).
+
+Score: 0.47
+
 ----Solution 74----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), mother(A,B).
 
-parent(A,B):-  person(A), person(B), father(B,B), mother(A,A).
-
 parent(A,B):-  person(A), person(B), father(A,B).
+
+parent(A,B):-  person(A), person(B), father(B,B), mother(A,B).
 
 Score: 0.47
 
 ----Solution 75----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-parent(A,B):-  person(A), person(B), father(B,B), mother(A,B).
-
-parent(A,B):-  person(A), person(B), father(A,B).
-
-Score: 0.47
-
-----Solution 76----
 
 Hypothesis: 
 parent(A,B):-  person(A), person(B), father(B,B), mother(B,A).
@@ -790,12 +783,12 @@ parent(A,B):-  person(A), person(B), father(A,B).
 
 Score: 0.47
 
-----Solution 77----
+----Solution 76----
 
 Hypothesis: 
-parent(A,B):-  person(A), person(B), mother(A,B).
-
 parent(A,B):-  person(A), person(B), father(B,B), mother(B,B).
+
+parent(A,B):-  person(A), person(B), mother(A,B).
 
 parent(A,B):-  person(A), person(B), father(A,B).
 
@@ -807,49 +800,4 @@ Hypothesis:
 parent(A,B):-  person(A), person(B).
 
 Score: 0.20
-Found Solution in 4498.1759 seconds
-Experiment 2 Early Stop Prob ASPAL\n
-Executing ASPAL on file experiments/family.lp using solver .
-Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
-Max rules: 5
-Max conditions: 5
-Max producers: 10
-Max consumers: 10
-Epsilon: 1
-Window: 5
-Max Hypothesis Length: 20
----- Finding Solutions ----
-Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/wk_family.lp. Now starting the solver
-Invoking 
-
-----Best Solution----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), father(A,B).
-
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-Score: 1.00
-Found Solution in 348.9280 seconds
-Experiment 3 EArly Stop Prob ASPAL with ProbLog\n
-Executing ASPAL on file experiments/family.lp using solver.
-Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
-Max rules: 5
-Max conditions: 5
-Max producers: 10
-Max consumers: 10
-Epsilon: 1
-Window: 5
-Max Hypothesis Length: 20
----- Finding Solutions ----
-Successfully processe. Now starting the solver
-
-----Best Solution----
-
-Hypothesis: 
-parent(A,B):-  person(A), person(B), father(A,B).
-
-parent(A,B):-  person(A), person(B), mother(A,B).
-
-Score: 1.00
-Found Solution in 628.8215 seconds
+Found Solution in 8969.5375 seconds

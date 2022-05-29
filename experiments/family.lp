@@ -141,6 +141,9 @@ modeh(parent(+person, +person)).
 modeb(father(+person, +person), [(max, 1)]).
 modeb(mother(+person, +person), [(max, 1)]).
 
+parent(X, Y) :- father(X, Y).
+
+
 % Examples
 
 example(parent(bart,stijn), 0.7).

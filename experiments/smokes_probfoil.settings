@@ -1,0 +1,11 @@
+base(smoke(person)).
+base(stress(person)).
+base(influences(person, person)).
+
+modes(smoke(+)).
+modes(stress(+)).
+modes(influences(-, +)).
+%modes(smoke(+)).
+
+learn(smoke/1).
+example_mode(auto).

@@ -1,0 +1,11 @@
+person(ann).
+person(bob).
+person(carl).
+
+0.8::stress(ann).
+0.6::influences(ann, bob).
+0.2::influences(bob, carl).
+
+0.8::smoke(ann).
+0.48::smoke(bob).
+0.096::smoke(carl).

@@ -953,7 +953,7 @@ if __name__ == "__main__":
     MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len is not None else 20
     EPSILON = args.epsilon if args.epsilon is not None else 1
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules is not None else 5
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 5
+    MAX_RULES = args.max_rules if args.max_rules is not None else 2
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 3
 
     main(FILENAME)

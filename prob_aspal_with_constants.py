@@ -945,7 +945,7 @@ if __name__ == "__main__":
     parser.add_argument("-mr", "--max_rules", dest='max_rules', help="Max Rules", type=int)
     parser.add_argument("-mc", "--max_conditions", dest='max_conditions', help="Max Conditions", type=int)
     parser.add_argument("-mp", "--max_producers", dest='max_producers', help="Max Producers", type=int)
-    parser.add_argument("-max_cons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
+    parser.add_argument("-mcons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
     parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
     parser.add_argument("-a", "--alpha", dest='alpha', help="Weight for length", type=float)
     parser.add_argument("-b", "--beta", dest='beta', help="Weight for loss", type=float)

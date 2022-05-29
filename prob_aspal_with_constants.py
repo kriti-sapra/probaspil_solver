@@ -945,7 +945,7 @@ if __name__ == "__main__":
     parser.add_argument("-mr", "--max_rules", dest='max_rules', help="Max Rules", type=int)
     parser.add_argument("-mc", "--max_conditions", dest='max_conditions', help="Max Conditions", type=int)
     parser.add_argument("-mp", "--max_producers", dest='max_producers', help="Max Producers", type=int)
-    parser.add_argument("-mcons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
+    parser.add_argument("-max_cons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
     parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
     parser.add_argument("-a", "--alpha", dest='alpha', help="Weight for length", type=float)
     parser.add_argument("-b", "--beta", dest='beta', help="Weight for loss", type=float)
@@ -959,8 +959,10 @@ if __name__ == "__main__":
     EPSILON = args.epsilon if args.epsilon is not None else 1
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules is not None else 2
-    MAX_CONDITIONS = args.max_conditions is not None if args.max_conditions else 5
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 5
     ALPHA = args.alpha if args.alpha is not None else 0.5
     BETA = args.beta if args.beta is not None else 1
+
+    print("max rules: {}, max conditions: {}".format(MAX_RULES, MAX_CONDITIONS))
 
     main(FILENAME)

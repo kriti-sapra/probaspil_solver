@@ -1,6 +1,3 @@
-person(ann).
-person(bob).
-person(carl).
 
 0.8::stress(ann).
 0.6::influences(ann, bob).

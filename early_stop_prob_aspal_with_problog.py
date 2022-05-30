@@ -876,7 +876,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
         # print("Coverage: {}".format(coverage))
 
         # If the coverage of the same length hypothesis is better then update best solutions accordingly
-        if best_coverage < coverage:
+        if best_coverage <= coverage:
             # Reset current solution to avoid duplicates and contamination
             currentsolution = set()
             # Get individual rule abducibles from the hypothesis
@@ -895,7 +895,7 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
             if bestsolutionlen == n and best_coverage == coverage:
                 # If the coverage is the same as best coverage and the same length then you add the hypothesis to best solutions
                 bestsolution.add(frozenset(currentsolution))
-            else:
+            elif best_coverage < coverage:
                 # If the coverage is more than currenty best coverage, then the best solution set has to be cleared
                 best_coverage = coverage
                 bestsolutionlen = n

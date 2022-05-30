@@ -1,0 +1,242 @@
+Experiment 1 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 1
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical).
+
+Score: 0.78
+Hypothesis: 
+listen(A,rock):-  day(A), not listen(A,classical).
+
+listen(A,classical):-  day(A), not listen(A,rock).
+
+Score: 0.78
+Hypothesis: 
+listen(A,rock):-  day(A), walk(A).
+
+listen(A,classical):-  day(A), not listen(A,rock).
+
+Score: 0.78
+Found Solution in 0.5759 seconds
+Experiment 2 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 2
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+Score: 1.00
+Found Solution in 4.3818 seconds
+Experiment 3 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+Score: 1.00
+Found Solution in 4.4083 seconds
+Experiment 4 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 4
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+Score: 1.00
+Found Solution in 4.5393 seconds
+Experiment 5 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 5
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+Score: 1.00
+Found Solution in 4.3914 seconds
+Experiment 6 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 6
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+Score: 1.00
+Found Solution in 4.4094 seconds
+Experiment 7 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 7
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+Score: 1.00
+Found Solution in 4.3852 seconds
+Experiment 8 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 8
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+Score: 1.00
+Found Solution in 4.4002 seconds
+Experiment 9 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 9
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+Score: 1.00
+Found Solution in 4.4058 seconds
+Experiment 10 \n
+Executing ASPAL on file experiments/walk_answer_set.lp using solver .
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/aspal.log
+Max rules: 5
+Max conditions: 10
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processed /home/kriti/Desktop/FYP/prob_aspal_solver//tmp/wk_walk_answer_set.lp. Now starting the solver
+Invoking 
+
+----Best Solution----
+
+Hypothesis: 
+listen(A,classical):-  day(A), not listen(A,rock), walk(A).
+
+listen(A,rock):-  day(A), not listen(A,classical), walk(A).
+
+Score: 1.00
+Found Solution in 4.4119 seconds

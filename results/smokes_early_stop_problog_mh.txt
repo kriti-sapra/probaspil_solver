@@ -1,0 +1,230 @@
+Experiment 11 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 11
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 1.00
+Found Solution in 3.0846 seconds
+Experiment 12 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 12
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 3.1393 seconds
+Experiment 13 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 13
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 1.00
+Found Solution in 3.1420 seconds
+Experiment 14 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 14
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 1.00
+Found Solution in 3.1312 seconds
+Experiment 15 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 15
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 3.1398 seconds
+Experiment 16 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 16
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 3.1609 seconds
+Experiment 17 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 17
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 1.00
+Found Solution in 3.1275 seconds
+Experiment 18 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 18
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 3.1628 seconds
+Experiment 19 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 19
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), stress(A).
+
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+Score: 1.00
+Found Solution in 3.1695 seconds
+Experiment 20 \n
+Executing ASPAL on file experiments/smokes.lp using solver.
+Debug logs in /home/kriti/Desktop/FYP/prob_aspal_solver/tmp/aspal.log
+Max rules: 2
+Max conditions: 3
+Max producers: 10
+Max consumers: 10
+Epsilon: 1
+Window: 5
+Max Hypothesis Length: 20
+---- Finding Solutions ----
+Successfully processe. Now starting the solver
+Problog called 92 times.
+
+----Best Solution----
+
+Hypothesis: 
+smoke(A):-  person(A), influences(B,A), person(B), smoke(B).
+
+smoke(A):-  person(A), stress(A).
+
+Score: 1.00
+Found Solution in 3.1498 seconds

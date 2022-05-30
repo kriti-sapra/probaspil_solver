@@ -1,4 +1,3 @@
-
 0.8::stress(ann).
 0.6::influences(ann, bob).
 0.2::influences(bob, carl).

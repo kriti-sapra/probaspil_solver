@@ -1,7 +1,6 @@
-modes(smoke(+)).
-modes(stress(+)).
-modes(influences(-, +)).
-modes(smoke(+)).
+mode(smoke(+)).
+mode(stress(+)).
+mode(influences(-, +)).
 
 base(smoke(person)).
 base(stress(person)).

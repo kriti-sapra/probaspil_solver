@@ -14,4 +14,4 @@ pf(influences(bob, carl), 0.2).
 
 example(smoke(ann), 0.8).
 example(smoke(bob), 0.48).
-%example(smoke(carl), 0.096).
+example(smoke(carl), 0.096).

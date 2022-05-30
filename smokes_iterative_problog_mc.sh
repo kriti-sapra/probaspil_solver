@@ -32,26 +32,26 @@ python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 5 >> resu
 echo "Experiment 6 \n" >> results/surf_iterative_problog_mc.txt
 echo "Experiment 6 \n"
 
-python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 6 >> results/surf_iterative_problog_mc.txt
+#python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 6 >> results/surf_iterative_problog_mc.txt
 
 echo "Experiment 7 \n" >> results/surf_iterative_problog_mc.txt
 echo "Experiment 7 \n"
 
-python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 7 >> results/surf_iterative_problog_mc.txt
+#python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 7 >> results/surf_iterative_problog_mc.txt
 
 echo "Experiment 8 \n" >> results/surf_iterative_problog_mc.txt
 echo "Experiment 8 \n"
 
-python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 8 >> results/surf_iterative_problog_mc.txt
+#python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 8 >> results/surf_iterative_problog_mc.txt
 
 echo "Experiment 9 \n" >> results/surf_iterative_problog_mc.txt
 echo "Experiment 9 \n"
 
-python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 9 >> results/surf_iterative_problog_mc.txt
+#python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 9 >> results/surf_iterative_problog_mc.txt
 
 echo "Experiment 10 \n" >> results/surf_iterative_problog_mc.txt
 echo "Experiment 10 \n"
 
-python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 10 >> results/surf_iterative_problog_mc.txt
+#python iterative_prob_aspal_with_problog.py -f experiments/surf.lp -mc 10 >> results/surf_iterative_problog_mc.txt
 
 echo "Finished running experiments. See results in results/surf_iterative_problog_mc.txt"

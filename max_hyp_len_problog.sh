@@ -54,7 +54,7 @@ echo "Experiment 10 \n"
 
 python early_stop_prob_aspal_with_problog.py -f experiments/smokes.lp -mh 10 >> results/smokes_early_stop_problog_mh.txt
 
-echo "Experiment 11 \n" > results/smokes_early_stop_problog_mh.txt
+echo "Experiment 11 \n" >> results/smokes_early_stop_problog_mh.txt
 echo "Experiment 11 \n"
 
 python early_stop_prob_aspal_with_problog.py -f experiments/smokes.lp -mh 11 >> results/smokes_early_stop_problog_mh.txt

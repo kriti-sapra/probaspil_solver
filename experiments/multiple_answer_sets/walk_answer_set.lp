@@ -12,6 +12,8 @@ music(classical).
 
 modeh(listen(+day, #music)).
 modeb(walk(+day), [(max, 1)]).
+%modeb(wind(+day), [(max, 1)]).
+%modeb(rain(+day), [(max, 1)]).
 modeb(not listen(+day, #music), [(max, 1)]).
 
 example(listen(0, classical), 0.28).

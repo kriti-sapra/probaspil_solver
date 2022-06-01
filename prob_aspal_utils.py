@@ -30,7 +30,7 @@ def print_solution(isol, score):
     else:
         for r in isol:
             print(r)
-    print("Score: {:.2f}".format(score))
+    print("Regularised Loss of the Hypothesis: {:.2f}".format(score))
 
 
 def print_solutions(solutions, best_solution, best_score, time):
@@ -38,7 +38,7 @@ def print_solutions(solutions, best_solution, best_score, time):
 
     if not best_solution:
         print("There is no solution to this learning task. ")
-        print('Found Solution in {:.4f} seconds'.format(time))
+        print('Completed Task in {:.4f} seconds'.format(time))
         return
 
     for isol in solutions:
@@ -52,6 +52,6 @@ def print_solutions(solutions, best_solution, best_score, time):
     for isol in best_solution:
         print_solution(isol, best_score)
 
-    print('Found Solution in {:.4f} seconds'.format(time))
+    print('Completed Task in {:.4f} seconds'.format(time))
 
 

@@ -1,4 +1,4 @@
-mode(smoke(+)).
+%mode(smoke(+)).
 mode(stress(+)).
 mode(influences(-, +)).
 

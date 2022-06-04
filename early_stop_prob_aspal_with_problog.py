@@ -13,9 +13,9 @@ from problog import get_evaluatable
 import argparse
 
 
-DEFAULT_FILE = 'experiments/smokes.lp'
-# BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
+DEFAULT_FILE = 'simple_sunshine.lp'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+# BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 ERROR_LOG_FILE = BASE_PATH + '/tmp/problog.log'
@@ -839,6 +839,8 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
 
     logging.debug("Starting to make total choices.")
     logging.debug("Total choices made.")
+
+    print(file_contents)
 
     # Traverse hypotheses with shortest first
     runs = 0

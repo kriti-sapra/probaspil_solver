@@ -888,7 +888,6 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
                 bestsolution.add(frozenset(currentsolution))
 
         elif n <= bestsolutionlen + WINDOW:
-            # print("ELIF: {}".format(n))
             continue
         else:
             break

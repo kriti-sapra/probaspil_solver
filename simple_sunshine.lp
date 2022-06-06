@@ -1,9 +1,14 @@
-day(d1).
-% Probabilistic Facts (PF)
-pf(sunshine(d1), 0.4).
+day(0).
+sun(0).
 
-% Mode Bias (M)
-modeh(1, surf(+day)).
-modeb(1, sunshine(+day), [(max, 1)]).
 
-example(surf(d1), 0.4).
+run(X) :- sun(X), not wind(X), not walk(X).
+walk(X) :- sun(X), not rain(X), not run(X).
+
+
+music(rock).
+music(classical).
+
+
+listen(X, rock) :- day(X), walk(X), not listen(X, classical).
+listen(X, classical) :- day(X), walk(X), not listen(X, rock).

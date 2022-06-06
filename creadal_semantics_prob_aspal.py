@@ -779,8 +779,9 @@ def check_models_for_examples(actual, models, tc_probability):
         # If example is in all answer sets then add the tc_probability to the lower actual probability
         if all(e in s for s in string_models):
             actual[e][0] += tc_probability
+            actual[e][1] += tc_probability
         # If example is in any answer sets then add the tc_probability to the higher actual probability
-        if any(e in s for s in string_models):
+        elif any(e in s for s in string_models):
             actual[e][1] += tc_probability
 
 

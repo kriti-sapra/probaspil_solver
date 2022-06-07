@@ -130,10 +130,10 @@ female_ancestor(laura,pieter).
 grandmother(esther,soetkin).
 grandmother(esther,stijn).
 grandmother(esther,pieter).
-grandmother(yvonne,lieve).
-grandmother(yvonne,katleen).
+0.7::grandmother(yvonne,lieve).
+0.8::grandmother(yvonne,katleen).
 grandmother(alice,luc).
 grandmother(alice,an).
-grandmother(rose,soetkin).
+0.6::grandmother(rose,soetkin).
 grandmother(laura,lieve).
 grandmother(laura,katleen).

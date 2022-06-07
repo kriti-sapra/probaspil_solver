@@ -28,8 +28,8 @@ example(listen(0, rock), 0.28).
 example(listen(1, classical), 0.32).
 example(listen(1, rock), 0.32).
 
-example(listen(2, classical), 0.133).
-example(listen(2, rock), 0.133).
+example(listen(2, classical), 0.073).
+example(listen(2, rock), 0.073).
 
 
 % listen (rock) :− walk , not listen ( classical ). listen ( classical ) :− walk , not listen (rock ).

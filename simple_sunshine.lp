@@ -1,7 +1,7 @@
 day(0).
 sun(0).
 
-
+wind(0).
 run(X) :- sun(X), not wind(X), not walk(X).
 walk(X) :- sun(X), not rain(X), not run(X).
 

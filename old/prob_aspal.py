@@ -2,9 +2,9 @@ import os
 import time
 import copy
 import logging
-from prob_aspal_utils import *
-from logic_program import *
-from clist import CList
+from utils_probaspil import *
+from utils_logic_program import *
+from utils_clist import CList
 import clingo
 from itertools import chain, combinations
 import sys

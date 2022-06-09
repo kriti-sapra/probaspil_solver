@@ -2,16 +2,16 @@ import os
 import time
 import copy
 import logging
-from prob_aspal_utils import *
-from logic_program import *
-from clist import CList
+from utils_probaspil import *
+from utils_logic_program import *
+from utils_clist import CList
 import clingo
 from itertools import chain, combinations
 import argparse
 
-DEFAULT_FILE = 'experiments/credal/credal_walk_example.lp'
-#BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
-BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
+DEFAULT_FILE = 'experiments/multiple_answer_sets/walk_answer_set.lp'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+# BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
 SOLVER = ''
@@ -514,23 +514,16 @@ def createTop(modedecs):
 
 
 # Process probabilistic facts and examples
-def process_prob_facts(inputs):
+def process_inputs(inputs, delim=''):
     out = {}
     for p in inputs:
         args = get_outer_arguments(p)
         assert len(args) == 2
-        key = args[0] + '. '
+        if delim == 'pf':
+            key = args[0] + '. '
+        else:
+            key = args[0]
         out[key] = float(args[1])
-    return out
-
-
-def process_examples(inputs):
-    out = {}
-    for p in inputs:
-        args = get_outer_arguments(p)
-        assert len(args) == 3
-        key = args[0]
-        out[key] = (float(args[1]), float(args[2]))
     return out
 
 
@@ -606,11 +599,11 @@ def process_file(filename):
     const_flattened_weights = create_abds_with_constants(rules=top, filename=filename, background=background)
 
     logging.debug('Starting processing probabilistic facts')
-    pfs = process_prob_facts(prob_facts)
+    pfs = process_inputs(prob_facts, 'pf')
     logging.debug('Probabilistic Facts Processed')
 
     logging.debug('Starting processing examples')
-    exs = process_examples(examples)
+    exs = process_inputs(examples, 'example')
     logging.debug('Examples Processed')
 
     finalfile = ''
@@ -768,17 +761,16 @@ def get_models(control):
 
 
 def check_models_for_examples(actual, models, tc_probability):
-    if len(models) == 0:
+    if(len(models) == 0):
         return
-    string_models = [str(m) for m in models]
-    for e in actual:
-        # If example is in all answer sets then add the tc_probability to the lower actual probability
-        if all(e in s for s in string_models):
-            actual[e][0] += tc_probability
-            actual[e][1] += tc_probability
-        # If example is in any answer sets then add the tc_probability to the higher actual probability
-        elif any(e in s for s in string_models):
-            actual[e][1] += tc_probability
+    uniform_split = tc_probability / len(models)
+    for m in models:
+        model = str(m)
+        # print("MODEL: {}".format(model))
+        for e in actual:
+            if e in model:
+                actual[e] += uniform_split
+
 
 def l_mse(expected, actual):
     score = 0
@@ -788,42 +780,38 @@ def l_mse(expected, actual):
 
 
 # Calculate loss of hypothesis of 1 - acc
-def l_accuracy(expected, actual):
+def accuracy(expected, actual):
     true_positive = 0
     true_negative = 0
-    true_brave = 0
     false_positive = 0
     false_negative = 0
-    false_brave = 0
     for e in expected:
-        pos_lower = expected[e][0]
-        pos_upper = expected[e][1]
-        pos_h_lower = actual[e][0]
-        pos_h_upper = actual[e][1]
-        tp = min(pos_lower, pos_h_lower)
-        tn = min(1 - pos_upper, 1 - pos_h_upper)
-        tb = max(0, min(pos_upper, pos_h_upper) - max(pos_lower, pos_h_lower))
-        fp = max(0, pos_h_lower - pos_lower)
-        fn = max(0, pos_upper - pos_h_upper)
-        fbl = max(0, min(pos_lower, pos_h_upper) - pos_h_lower)
-        fbr = max(0, pos_h_upper - max(pos_h_lower, pos_upper))
+        pos = expected[e]
+        posh = actual[e]
+        neg = 1 - pos
+        negh = 1 - posh
+        tp = min(pos, posh)
+        tn = min(neg, negh)
+        fp = max(0, neg - tn)
+        fn = max(0, pos - tp)
         true_positive += tp
         true_negative += tn
-        true_brave += tb
         false_positive += fp
         false_negative += fn
-        false_brave += fbl + fbr
-    acc = ((true_positive + true_negative + true_brave) / (
-            true_positive + true_negative + true_brave + false_positive + false_negative + false_brave))
-    return acc
+        # TODO: Normalise? Maybe use TP + TN / |E|
+    return (true_positive + true_negative) / len(expected)
 
 
 def alt_h_score(h_len, h_loss, a):
     return (h_len * a) + h_loss
 
 
+# def alt_h_score(h_len, h_loss, a):
+#     return ((h_len * a) * 0.2) + (h_loss * 0.8)
+
+
 # Execute Clingo to check solutions
-def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_accuracy):
+def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=accuracy):
     # proc = subprocess.Popen(SOLVER + ' < ' + file, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     solutions = {}
@@ -847,7 +835,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=l_
     for (h, n) in filtered_h:
         # logging.debug("H: {}, LENGTH: {}".format(h, n))
         # Examples you are trying to reach
-        prob_examples_h = {e: [0, 0] for e in examples}
+        prob_examples_h = {e: 0 for e in examples}
         # logging.debug("Hypothesis: {}".format(h))
 
         for tc in total_choices:
@@ -939,9 +927,9 @@ if __name__ == "__main__":
     parser.add_argument("-mc", "--max_conditions", dest='max_conditions', help="Max Conditions", type=int)
     parser.add_argument("-mp", "--max_producers", dest='max_producers', help="Max Producers", type=int)
     parser.add_argument("-mcons", "--max_consumers", dest='max_consumers', help="Max Consumers", type=int)
-    parser.add_argument("-w", "--window", dest='window', help="Window", type=int)
-    parser.add_argument("-mh", "--max_hyp", dest='max_hyp_len', help="Max Hypothesis Length", type=int)
     parser.add_argument("-e", "--epsilon", dest='epsilon', help="Epsilon", type=float)
+    parser.add_argument("-a", "--alpha", dest='alpha', help="Weight for length", type=float)
+    parser.add_argument("-b", "--beta", dest='beta', help="Weight for loss", type=float)
     parser.add_argument("-f", dest='filename',
                         help="Input file for solver", metavar="FILE")
     args = parser.parse_args()
@@ -949,11 +937,11 @@ if __name__ == "__main__":
     # PARAMETERS
     MAX_PRODUCERS = args.max_producers if args.max_producers is not None else 10
     MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
-    WINDOW = args.window if args.window is not None else 5
-    MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len is not None else 20
-    EPSILON = args.epsilon if args.epsilon is not None else 1
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
     MAX_RULES = args.max_rules if args.max_rules is not None else 5
     MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 5
+    ALPHA = args.alpha if args.alpha is not None else 0.25
+    BETA = args.beta if args.beta is not None else 1
+    EPSILON = args.epsilon if args.epsilon is not None else 1
 
     main(FILENAME)

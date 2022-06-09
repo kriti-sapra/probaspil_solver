@@ -1,6 +1,6 @@
 import re
 import string
-from clist import CList
+from utils_clist import CList
 
 def make_encoder(baseString):
     size = len(baseString)

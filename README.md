@@ -41,11 +41,11 @@ conda install pip
 
 3. Use pip to install clingo to the `probaspil` conda environment 
 ```
-{$PATH_TO_ANACONDA}/anaconda/envs/venv_name/bin/pip install clingo
+{$PATH_TO_ANACONDA}/anaconda/envs/probaspil/bin/pip install clingo
 ```
 4. Use pip to install problog to the `probaspil` conda environment 
 ```
-{$PATH_TO_ANACONDA}/anaconda/envs/venv_name/bin/pip install problog
+{$PATH_TO_ANACONDA}/anaconda/envs/probaspil/bin/pip install problog
 ```
 
 ## Running a ProbASPIL algorithm
@@ -61,7 +61,7 @@ This repo has a different script for each of the 8 algorithms. The algorithms ca
 - ProbASPIL+: `probaspil+.py`
 - Early Stop ProbASPIL+: `probaspil+_early_stop.py`
 - CredalASPIL: `credalaspil.py`
-- Early Stop CredalASPIL: `credalaspil_early_stop.py'
+- Early Stop CredalASPIL: `credalaspil_early_stop.py`
 
 The following command would run the ProbASPIL algorithm with the default parameters. 
 
@@ -74,8 +74,6 @@ All the algorithms have the following hyperparameters that can be specified usin
 file name: -f 
 maximum rules: -mr or --max_rules
 maximum conditions: -mc or --max_conditions
-maximum producers: -mp or --max_producers
-maximum consumers: -mcons or --max_conditions
 ```
 
 The Brute Force algorithms have extra hyperparameters: alpha, beta and epsilon. These can be specified using the following flags:

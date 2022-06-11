@@ -64,7 +64,6 @@ def print_task():
     om.toOut("Max conditions: " + str(MAX_CONDITIONS))
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
-    om.toOut("Epsilon: " + str(EPSILON))
     om.toOut("Window: " + str(WINDOW))
     om.toOut("Max Hypothesis Length: " + str(MAX_HYP_LEN))
 

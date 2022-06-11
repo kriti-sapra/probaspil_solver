@@ -58,9 +58,6 @@ def print_task():
     om.toOut("Max conditions: " + str(MAX_CONDITIONS))
     om.toOut("Max producers: " + str(MAX_PRODUCERS))
     om.toOut("Max consumers: " + str(MAX_CONSUMERS))
-    om.toOut("Epsilon: " + str(EPSILON))
-    om.toOut("Weight for length of hypothesis (alpha): " + str(ALPHA))
-    om.toOut("Weight for loss of hypothesis (beta): " + str(BETA))
 
 
 # PREPROCESSING FILE

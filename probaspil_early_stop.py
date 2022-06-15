@@ -9,7 +9,7 @@ import clingo
 from itertools import chain, combinations
 import argparse
 
-DEFAULT_FILE = 'experiments/smokes.lp'
+DEFAULT_FILE = 'experiments/path_hard.lp'
 BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
 #BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
@@ -826,6 +826,11 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
     total_choices = get_total_choices_with_probs(prob_facts)
     logging.debug("Total choices made.")
 
+    for r in rule_weights:
+        currentclause = transform_rule(r, modedecs)
+        line_rep = currentclause.toLineStr()
+        print(line_rep)
+
     # Traverse hypotheses with shortest first
     total_traversals = 0
     for (h, n) in filtered_h:
@@ -934,8 +939,8 @@ if __name__ == "__main__":
     MAX_PRODUCERS = args.max_producers if args.max_producers is not None else 10
     MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules is not None else 5
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 5
+    MAX_RULES = args.max_rules if args.max_rules is not None else 2
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 3
     WINDOW = args.window if args.window is not None else 5
     MAX_HYP_LEN = args.max_hyp_len if args.max_hyp_len is not None else 20
 

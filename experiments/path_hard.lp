@@ -4,7 +4,7 @@ node(c).
 node(d).
 node(e).
 
-path(X,X) :- node(X).
+%path(X,X) :- node(X).
 
 modeh(path(+node, +node)).
 modeb(edge(+node, -node), [(max, 1)]).
@@ -16,6 +16,6 @@ pf(edge(a,c), 0.3).
 pf(edge(c,d), 0.4).
 pf(edge(d,e), 0.4).
 
-example(path(a,e), 0.1286).
+example(path(a,e), 0.14320).
 example(path(c,e), 0.1600).
-example(path(a,c), 0.8040).
+example(path(a,c), 0.3).

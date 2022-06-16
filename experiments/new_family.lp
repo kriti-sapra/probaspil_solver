@@ -129,7 +129,7 @@ parent(laura, esther).
 modeb(not male(+person), [(max, 1)]).
 modeb(parent(+person,+person), [(max, 1)]).
 modeb(parent(+person,-person), [(max, 1)]).
-modeb(parent(-person,+person), [(max, 1)]).
+%modeb(parent(-person,+person), [(max, 1)]).
 modeh(grandmother(+person, +person), [(max, 1)]).
 
 %parent(X, Y) :- father(X, Y).

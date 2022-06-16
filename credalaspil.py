@@ -954,8 +954,8 @@ if __name__ == "__main__":
     MAX_PRODUCERS = args.max_producers if args.max_producers is not None else 10
     MAX_CONSUMERS = args.max_consumers if args.max_consumers is not None else 10
     FILENAME = args.filename if args.filename is not None else DEFAULT_FILE
-    MAX_RULES = args.max_rules if args.max_rules is not None else 2
-    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 2
+    MAX_RULES = args.max_rules if args.max_rules is not None else 3
+    MAX_CONDITIONS = args.max_conditions if args.max_conditions is not None else 5
     ALPHA = args.alpha if args.alpha is not None else 0.1
     BETA = args.beta if args.beta is not None else 1
     EPSILON = args.epsilon if args.epsilon is not None else 0.5

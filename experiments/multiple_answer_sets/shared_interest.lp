@@ -14,12 +14,9 @@ subject(music).
 :- pair(P, P).
 
 pair(P1, P2) :- pair(P2, P1).
-%shared_interest(P1, P2, I) :- interested(P1, I), interested(P2, I),pair(P1, P2).
 
 modeh(shared_interest(+person, +person, +subject)).
-%modeh(shared_disinterest(+person, +person, +subject)).
 modeb(interested(+person, +subject), [(max, 2)]).
-%modeb(not interested(+person, +subject), [(max, 2)]).
 modeb(pair(+person, +person), [(max, 1)]).
 
 
@@ -34,11 +31,14 @@ interested(a, physics).
 interested(c, music).
 pf(interested(d, music), 0.8903).
 
-example(shared_interest(c,d,music), 0.2967666666666667).
-example(shared_interest(d,c,music), 0.2967666666666667).
-example(shared_interest(d,a,logic), 0.11846666666666666).
-example(shared_interest(a,d,logic), 0.11846666666666666).
-example(shared_interest(b,c,sport), 0.23273333333333335).
-example(shared_interest(c,b,sport), 0.23273333333333335).
-example(shared_interest(b,c,biology), 0.19265666666666667).
-example(shared_interest(c,b,biology), 0.19265666666666667).
+example(shared_interest(c,d,music), 0.2968).
+example(shared_interest(d,c,music), 0.2968).
+example(shared_interest(d,a,logic), 0.1185).
+example(shared_interest(a,d,logic), 0.1185).
+example(shared_interest(b,c,sport), 0.2327).
+example(shared_interest(c,b,sport), 0.2327).
+example(shared_interest(b,c,biology), 0.1927).
+example(shared_interest(c,b,biology), 0.1927).
+
+% To learn:
+%shared_interest(P1, P2, I) :- interested(P1, I), interested(P2, I),pair(P1, P2).

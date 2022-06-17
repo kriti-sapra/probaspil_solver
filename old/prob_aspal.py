@@ -573,7 +573,7 @@ def process_file(filename):
     for r in top:
         finalfile += str(r)
 
-    tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_" + filename.split("/")[-1]
+    tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/probaspil_solver/tmp/wk_" + filename.split("/")[-1]
     ensure_dir(tempfile)
     f = open(tempfile, 'w')
     f.write(finalfile)

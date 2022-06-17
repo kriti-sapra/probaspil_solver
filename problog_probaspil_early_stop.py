@@ -14,7 +14,7 @@ import argparse
 
 
 DEFAULT_FILE = 'experiments/smokes.lp'
-BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/probaspil_solver'
 # BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
@@ -626,7 +626,7 @@ def process_file(filename):
 
     logging.debug("File contents processed")
 
-    # tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal/tmp/wk_" + filename.split("/")[-1]
+    # tempfile = "/Users/kritisapra/Desktop/Imperial/Fourth_Year/probaspil_solver/tmp/wk_" + filename.split("/")[-1]
     # ensure_dir(tempfile)
     # f = open(tempfile, 'w')
     # f.write(finalfile)

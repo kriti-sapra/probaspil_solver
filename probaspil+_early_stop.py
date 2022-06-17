@@ -10,7 +10,7 @@ from itertools import chain, combinations
 import argparse
 
 DEFAULT_FILE = 'experiments/multiple_answer_sets/shared_interest.lp'
-BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/prob_aspal'
+BASE_PATH = '/Users/kritisapra/Desktop/Imperial/Fourth_Year/probaspil_solver'
 # BASE_PATH = '/home/kriti/Desktop/FYP/prob_aspal_solver/'
 LOG_FILENAME = BASE_PATH + '/tmp/aspal.log'
 
@@ -880,7 +880,7 @@ def execute(filename, rule_weights, modedecs, prob_facts, examples, loss_func=ac
                 # If the coverage is the same as best coverage and the same length then you add the hypothesis to best solutions
                 bestsolution.add(frozenset(currentsolution))
             elif best_coverage < coverage:
-                print("Expect:{}, \nactual:{}".format(examples, prob_examples_h))
+                #print("Expect:{}, \nactual:{}".format(examples, prob_examples_h))
 
                 # If the coverage is more than currenty best coverage, then the best solution set has to be cleared
                 best_coverage = coverage

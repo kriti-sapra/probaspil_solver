@@ -839,8 +839,6 @@ def execute(file_contents, rule_weights, modedecs, examples, loss_func=accuracy)
     logging.debug("Starting to make total choices.")
     logging.debug("Total choices made.")
 
-    print(file_contents)
-
     # Traverse hypotheses with shortest first
     runs = 0
     for (h, n) in filtered_h:

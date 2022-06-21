@@ -63,6 +63,8 @@ This repo has a different script for each of the 8 algorithms. The algorithms ca
 - CredalASPIL: `credalaspil.py`
 - Early Stop CredalASPIL: `credalaspil_early_stop.py`
 
+Each ProbASPIL algorithm has a `BASE_PATH` variable in the file that is defined in find the temporary files. Before running an algorithm, make sure this is updated to the path where the probaspil solver is stored.
+
 The following command would run the ProbASPIL algorithm with the default parameters. 
 
 ```

@@ -17,13 +17,13 @@ pair(P1, P2) :- pair(P2, P1).
 shared_interest(P1, P2, I) :- interested(P1, I), interested(P2, I),pair(P1, P2).
 %shared_disinterest(P1, P2, I) :- not interested(P1, I), not interested(P2, I), pair(P1, P2), interested(P3, I).
 
-%pf(interested(a, logic), 0.4).
+interested(a, logic).
 interested(d, logic).
-%pf(interested(b, biology), 0.5).
+interested(b, biology).
 interested(c, biology).
 interested(a, sport).
 interested(b, sport).
-%interested(c, sport).
+interested(c, sport).
 interested(a, physics).
 interested(c, music).
-%interested(d, music).
+interested(d, music).
